@@ -1,0 +1,913 @@
+fileFormatVersion: 2
+guid: 55d75a3143e178442b2b6d49cd0d15e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6767544638199224456
+    second: althea_walking_spritesheet_0
+  - first:
+      213: 5008312025723628256
+    second: althea_walking_spritesheet_1
+  - first:
+      213: -8362503861483801188
+    second: althea_walking_spritesheet_2
+  - first:
+      213: -7962561465676000828
+    second: althea_walking_spritesheet_3
+  - first:
+      213: -6286505989686412560
+    second: althea_walking_spritesheet_4
+  - first:
+      213: -4004992076771202390
+    second: althea_walking_spritesheet_5
+  - first:
+      213: -1905381344001214859
+    second: althea_walking_spritesheet_6
+  - first:
+      213: 4599099353362336009
+    second: althea_walking_spritesheet_7
+  - first:
+      213: 1559425472701260624
+    second: althea_walking_spritesheet_8
+  - first:
+      213: 2960053431836062483
+    second: althea_walking_spritesheet_9
+  - first:
+      213: -7287076989029065002
+    second: althea_walking_spritesheet_10
+  - first:
+      213: -8871716108117484772
+    second: althea_walking_spritesheet_11
+  - first:
+      213: 8278714063121111332
+    second: althea_walking_spritesheet_12
+  - first:
+      213: 7648184054827144745
+    second: althea_walking_spritesheet_13
+  - first:
+      213: 5987082167893229092
+    second: althea_walking_spritesheet_14
+  - first:
+      213: -6036064702555574136
+    second: althea_walking_spritesheet_15
+  - first:
+      213: 8529979509423220023
+    second: althea_walking_spritesheet_16
+  - first:
+      213: 8658073497115899013
+    second: althea_walking_spritesheet_17
+  - first:
+      213: 7167861298000438305
+    second: althea_walking_spritesheet_18
+  - first:
+      213: 150132666039493929
+    second: althea_walking_spritesheet_19
+  - first:
+      213: -136892705528506651
+    second: althea_walking_spritesheet_20
+  - first:
+      213: 2762920690414946527
+    second: althea_walking_spritesheet_21
+  - first:
+      213: -1571330283254208265
+    second: althea_walking_spritesheet_22
+  - first:
+      213: 1027531796526269840
+    second: althea_walking_spritesheet_23
+  - first:
+      213: -3928779030928568053
+    second: althea_walking_spritesheet_24
+  - first:
+      213: -272638835793097464
+    second: althea_walking_spritesheet_25
+  - first:
+      213: -5354791344046476167
+    second: althea_walking_spritesheet_26
+  - first:
+      213: 1797252028785902169
+    second: althea_walking_spritesheet_27
+  - first:
+      213: -5351716133180925709
+    second: althea_walking_spritesheet_28
+  - first:
+      213: -2605651282604811916
+    second: althea_walking_spritesheet_29
+  - first:
+      213: -1210955033660785762
+    second: althea_walking_spritesheet_30
+  - first:
+      213: 677526713900275245
+    second: althea_walking_spritesheet_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 4061
+        width: 578
+        height: 1228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888d6711ef52bed50800000000000000
+      internalID: 6767544638199224456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 4061
+        width: 581
+        height: 1228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eae2919049118540800000000000000
+      internalID: 5008312025723628256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 4061
+        width: 582
+        height: 1227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95fc6f5b0b62fb80800000000000000
+      internalID: -8362503861483801188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 4061
+        width: 584
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c11b20d88c4f7190800000000000000
+      internalID: -7962561465676000828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 4061
+        width: 587
+        height: 1224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa30661c18d1c8a0800000000000000
+      internalID: -6286505989686412560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 4311
+        y: 4061
+        width: 591
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa6ccfece86b68c0800000000000000
+      internalID: -4004992076771202390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 4061
+        width: 594
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576b62543c9be85e0800000000000000
+      internalID: -1905381344001214859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 5998
+        y: 4061
+        width: 588
+        height: 1218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90904ebae7843df30800000000000000
+      internalID: 4599099353362336009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2716
+        width: 596
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053ed0a843134a510800000000000000
+      internalID: 1559425472701260624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2716
+        width: 596
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313b3c8c9e8341920800000000000000
+      internalID: 2960053431836062483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 2716
+        width: 596
+        height: 1218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dedff9461a1fda90800000000000000
+      internalID: -7287076989029065002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 2716
+        width: 595
+        height: 1218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bdb8b343551e480800000000000000
+      internalID: -8871716108117484772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3468
+        y: 2716
+        width: 592
+        height: 1218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4295d51f396e3e270800000000000000
+      internalID: 8278714063121111332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 4311
+        y: 2716
+        width: 591
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92657c440eec32a60800000000000000
+      internalID: 7648184054827144745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 5154
+        y: 2716
+        width: 590
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ef952c283661350800000000000000
+      internalID: 5987082167893229092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 5998
+        y: 2716
+        width: 585
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880b6ea22279b3ca0800000000000000
+      internalID: -6036064702555574136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1373
+        width: 585
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73528888b23906670800000000000000
+      internalID: 8529979509423220023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1373
+        width: 585
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58431d229f7a72870800000000000000
+      internalID: 8658073497115899013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1373
+        width: 585
+        height: 1226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1242692afdb597360800000000000000
+      internalID: 7167861298000438305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1373
+        width: 584
+        height: 1226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92567744dd0651200800000000000000
+      internalID: 150132666039493929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1373
+        width: 585
+        height: 1226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e691a24fc8a91ef0800000000000000
+      internalID: -136892705528506651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 1373
+        width: 585
+        height: 1226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd882c6babdd75620800000000000000
+      internalID: 2762920690414946527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 5156
+        y: 1373
+        width: 585
+        height: 1226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8a1d1ce63813ae0800000000000000
+      internalID: -1571330283254208265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 5998
+        y: 1373
+        width: 582
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0950e5f89b6824e00800000000000000
+      internalID: 1027531796526269840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 29
+        width: 588
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01df74794c2a79c0800000000000000
+      internalID: -3928779030928568053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 29
+        width: 588
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d83906c64673cf0800000000000000
+      internalID: -272638835793097464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 29
+        width: 591
+        height: 1222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974f5cbb4a5ffa5b0800000000000000
+      internalID: -5354791344046476167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 29
+        width: 592
+        height: 1222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95242aba23f11f810800000000000000
+      internalID: 1797252028785902169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 29
+        width: 594
+        height: 1219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8160f0882eab5b0800000000000000
+      internalID: -5351716133180925709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 4311
+        y: 29
+        width: 595
+        height: 1219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4799ccbb6fdd6dbd0800000000000000
+      internalID: -2605651282604811916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 5154
+        y: 29
+        width: 590
+        height: 1219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b7da310d2d13fe0800000000000000
+      internalID: -1210955033660785762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_walking_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 5998
+        y: 29
+        width: 581
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d261dd3e4fe076900800000000000000
+      internalID: 677526713900275245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
