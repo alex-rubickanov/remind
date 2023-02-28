@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 public class CutsceneScript : MonoBehaviour
 {
@@ -166,6 +167,7 @@ public class CutsceneScript : MonoBehaviour
                 break;
             case 21:
                 Destroy(this.gameObject);
+               
                 break;
 
 
