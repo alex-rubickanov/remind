@@ -4,22 +4,40 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public Rigidbody2D rb2D;
-    public float movehorizontal;
+    Rigidbody2D rb2D;
+    [SerializeField] float moveHorizontal;
     [SerializeField] float speed = 1f;
+    SpriteRenderer sr; 
+
+    Animator animator;
     void Start()
     {
-        rb2D =GetComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    
+
     void Update()
     {
-        movehorizontal = Input.GetAxisRaw("Horizontal");
+        moveHorizontal = Input.GetAxisRaw("Horizontal");
+
+        if (moveHorizontal == 0f)
+        {
+            animator.SetBool("isWalking", false);
+        } else if (moveHorizontal == -1f)
+        {
+            sr.flipX = true;
+            animator.SetBool("isWalking", true);
+        } else
+        {
+            sr.flipX = false;
+            animator.SetBool("isWalking", true);
+        }
     }
     void FixedUpdate()
     {
-        rb2D.velocity = new Vector2(movehorizontal * speed, 0f);
+        rb2D.velocity = new Vector2(moveHorizontal * speed, 0f);
     }
 
 }
