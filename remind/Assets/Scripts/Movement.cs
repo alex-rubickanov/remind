@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    [SerializeField] float moveHorizontal;
+    float moveHorizontal;
     [SerializeField] float speed = 1f;
     SpriteRenderer sr; 
 

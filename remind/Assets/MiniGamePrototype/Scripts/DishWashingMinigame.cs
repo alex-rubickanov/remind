@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class DishWashingMinigame : MonoBehaviour
 {
-    [SerializeField] private GameObject[] gameObjects;
-    [SerializeField] private GameObject[] randomArray;
+    [SerializeField] private GameObject[] gameObjects;//prefabs
 
     [SerializeField] private List<GameObject> randomList;
 
@@ -22,13 +21,7 @@ public class DishWashingMinigame : MonoBehaviour
     [SerializeField] GameObject winScreen;
     void Start()
     {
-        // randomArray = RandomSequence(gameObjects);
         randomList = RandomSequence(gameObjects);
-
-        for (int i = 0; i < randomArray.Length; i++)
-        {
-            Debug.Log(randomArray[i]);
-        }
         InstantiateNewObject();
     }
 
@@ -39,14 +32,6 @@ public class DishWashingMinigame : MonoBehaviour
 
     List<GameObject> RandomSequence(GameObject[] gameObjects)
     {
-        /* GameObject[] randomArray = new GameObject[maxRandomArray];
-         for (int i = 0; i < randomArray.Length; i++)
-         {
-             randomArray[i] = gameObjects[Random.Range(0,gameObjects.Length)];
-         }
-
-         return randomArray; */
-
         List<GameObject> randomList = new List<GameObject>();
         for (int i = 0; i < maxRandomArray; i++)
         {

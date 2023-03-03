@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 
 public class CutsceneScript : MonoBehaviour
 {
-    [Header("")]
+    [Header("Animation Contoller")]
     [SerializeField] CanvasGroup[] canvasGroups;
     [SerializeField] AnimationCurve curve;
     [SerializeField] Animator secondFrameAnimator;
@@ -18,34 +18,7 @@ public class CutsceneScript : MonoBehaviour
         AlphaIncrease(canvasGroups[0]);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) 
-        {
-             for (int i = 0 ; i < canvasGroups.Length; i++)
-             {
-                 Debug.Log(canvasGroups[i].name);
-             }
-
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            AlphaReduce(canvasGroups[0]);
-            
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            AlphaIncrease(canvasGroups[0]);
-            
-        }
-
-
-    }
-
-    IEnumerator FadeIn(CanvasGroup canvasGroup)
+IEnumerator FadeIn(CanvasGroup canvasGroup)
     {
         float f = 0f;
 
@@ -54,11 +27,11 @@ public class CutsceneScript : MonoBehaviour
             f += Time.deltaTime * 1f;
             float a = curve.Evaluate(f);
             canvasGroup.alpha = a;
-            yield return 0;
+            yield return null;
         }
     }
 
-    IEnumerator FadeOut(CanvasGroup canvasGroup)
+    IEnumerator FadeOut(CanvasGroup canvasGroup) //as a previous coroutine we make a fade to make our text/image appeear
     {
         float f = 1f;
 
@@ -67,11 +40,11 @@ public class CutsceneScript : MonoBehaviour
             f -= Time.deltaTime * 1f;
             float a = curve.Evaluate(f);
             canvasGroup.alpha = a;
-            yield return 0;
+            yield return null;
         }
     }
 
-    void AlphaReduce(CanvasGroup canvasGroup)
+    void AlphaReduce(CanvasGroup canvasGroup)   
     {
         StartCoroutine(FadeOut(canvasGroup));
     }
@@ -84,7 +57,7 @@ public class CutsceneScript : MonoBehaviour
 
      
 
-    public void ButtonClick()
+    public void ButtonClick()           //every click we get next case
     {
         switch (frame)
         {
