@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DishWashingMinigame : MonoBehaviour
@@ -98,5 +99,10 @@ public class DishWashingMinigame : MonoBehaviour
         {
             Debug.Log("WRONG SHELF");
         }
+    }
+
+    public void ExitButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }

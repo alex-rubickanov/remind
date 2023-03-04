@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -34,6 +35,13 @@ public class Movement : MonoBehaviour
             sr.flipX = false;
             animator.SetBool("isWalking", true);
         }
+
+        
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            SceneManager.LoadScene(3);
+        }
+        
     }
     void FixedUpdate()
     {
