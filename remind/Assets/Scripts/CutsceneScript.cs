@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class CutsceneScript : MonoBehaviour
 {
@@ -139,7 +139,7 @@ IEnumerator FadeIn(CanvasGroup canvasGroup)
                 AlphaReduce(canvasGroups[21]);
                 break;
             case 21:
-                Destroy(this.gameObject);
+                SceneManager.LoadScene(2);
                
                 break;
 
