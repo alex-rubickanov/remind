@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Prototype/MainMenu.unity
+    guid: e954aaef0f6a4a740a523284c3dc367b
+  - enabled: 1
+    path: Assets/Scenes/Prototype/Cutscene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Prototype/level0.unity
+    guid: e45cbac1180abe546b5945771533e98d
+  - enabled: 1
+    path: Assets/Scenes/Prototype/MiniGame Prototype.unity
+    guid: 197a51cc4c8ee4b4e817eeb4223197a7
   m_configObjects: {}
