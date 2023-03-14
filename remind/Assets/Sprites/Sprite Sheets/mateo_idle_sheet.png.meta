@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: f60563092a7fe0849ac436fd4e4dccfd
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7852140816142368991
+    second: mateo_idle_sheet_0
+  - first:
+      213: 8218932258193139211
+    second: mateo_idle_sheet_1
+  - first:
+      213: -3435967664084012117
+    second: mateo_idle_sheet_2
+  - first:
+      213: -8439648433584457128
+    second: mateo_idle_sheet_3
+  - first:
+      213: 6926810324061288120
+    second: mateo_idle_sheet_4
+  - first:
+      213: -504067252088192270
+    second: mateo_idle_sheet_5
+  - first:
+      213: -650127722379882794
+    second: mateo_idle_sheet_6
+  - first:
+      213: 4073767097688497218
+    second: mateo_idle_sheet_7
+  - first:
+      213: 3068131553406257816
+    second: mateo_idle_sheet_8
+  - first:
+      213: 953036206095493125
+    second: mateo_idle_sheet_9
+  - first:
+      213: 7985535019795834649
+    second: mateo_idle_sheet_10
+  - first:
+      213: -4321375899987025319
+    second: mateo_idle_sheet_11
+  - first:
+      213: -6148157031900031317
+    second: mateo_idle_sheet_12
+  - first:
+      213: 2312078153296145855
+    second: mateo_idle_sheet_13
+  - first:
+      213: 1240107205887088341
+    second: mateo_idle_sheet_14
+  - first:
+      213: 36870847757974545
+    second: mateo_idle_sheet_15
+  - first:
+      213: 3686053493776028719
+    second: mateo_idle_sheet_16
+  - first:
+      213: 5754364809592417875
+    second: mateo_idle_sheet_17
+  - first:
+      213: 7496625628039094161
+    second: mateo_idle_sheet_18
+  - first:
+      213: -7183672221689062395
+    second: mateo_idle_sheet_19
+  - first:
+      213: 1517774082863405428
+    second: mateo_idle_sheet_20
+  - first:
+      213: -6952729461547241351
+    second: mateo_idle_sheet_21
+  - first:
+      213: -9164257502481343225
+    second: mateo_idle_sheet_22
+  - first:
+      213: -3748661459384294260
+    second: mateo_idle_sheet_23
+  - first:
+      213: -4588089838299983315
+    second: mateo_idle_sheet_24
+  - first:
+      213: -1925837293983757315
+    second: mateo_idle_sheet_25
+  - first:
+      213: 6129447473752698718
+    second: mateo_idle_sheet_26
+  - first:
+      213: -3934399400621176890
+    second: mateo_idle_sheet_27
+  - first:
+      213: 3101520469018217815
+    second: mateo_idle_sheet_28
+  - first:
+      213: 2125305374103414229
+    second: mateo_idle_sheet_29
+  - first:
+      213: -3702662221108203990
+    second: mateo_idle_sheet_30
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,9 +134,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -126,7 +219,658 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mateo_idle_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd00388487868fc60800000000000000
+      internalID: 7852140816142368991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06e992d7538f0270800000000000000
+      internalID: 8218932258193139211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba33b823d9df050d0800000000000000
+      internalID: -3435967664084012117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a340ff67850ea80800000000000000
+      internalID: -8439648433584457128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b67e283a49f02060800000000000000
+      internalID: 6926810324061288120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2406041813109f0800000000000000
+      internalID: -504067252088192270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dec9e0f7484af6f0800000000000000
+      internalID: -650127722379882794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c9563779de88830800000000000000
+      internalID: 4073767097688497218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a82f46461349a20800000000000000
+      internalID: 3068131553406257816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508686a416dd93d00800000000000000
+      internalID: 953036206095493125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9176f549ac152de60800000000000000
+      internalID: 7985535019795834649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952e65cb3836704c0800000000000000
+      internalID: -4321375899987025319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6574af0cb5daaa0800000000000000
+      internalID: -6148157031900031317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd682c94d6261020800000000000000
+      internalID: 2312078153296145855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d65d42feeeb53110800000000000000
+      internalID: 1240107205887088341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c7e2737ddf28000800000000000000
+      internalID: 36870847757974545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f249b9f7f1e772330800000000000000
+      internalID: 3686053493776028719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ea3cf6e4c9bdf40800000000000000
+      internalID: 5754364809592417875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f1c553a4d590860800000000000000
+      internalID: 7496625628039094161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cd163dc287e4c90800000000000000
+      internalID: -7183672221689062395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4791e52ac77301510800000000000000
+      internalID: 1517774082863405428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97075115461f28f90800000000000000
+      internalID: -6952729461547241351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d14661b5402d080800000000000000
+      internalID: -9164257502481343225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84a33293441afbc0800000000000000
+      internalID: -3748661459384294260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22dc8ec994d350c0800000000000000
+      internalID: -4588089838299983315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb06e44f2d0645e0800000000000000
+      internalID: -1925837293983757315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fe17e800c201550800000000000000
+      internalID: 6129447473752698718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7077927943669c0800000000000000
+      internalID: -3934399400621176890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d0f6b1f60da0b20800000000000000
+      internalID: 3101520469018217815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5a9a63af99e7d10800000000000000
+      internalID: 2125305374103414229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mateo_idle_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e2693d3508d9cc0800000000000000
+      internalID: -3702662221108203990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
