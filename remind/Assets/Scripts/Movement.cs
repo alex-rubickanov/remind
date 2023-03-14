@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    float moveHorizontal;
-    [SerializeField] float speed = 1f;
-    SpriteRenderer sr; 
+    [SerializeField] float moveHorizontal;
+    [SerializeField] float speed;
+    SpriteRenderer sr;
 
     Animator animator;
     void Start()
@@ -30,22 +30,17 @@ public class Movement : MonoBehaviour
         {
             sr.flipX = true;
             animator.SetBool("isWalking", true);
-        } else
+        } else if (moveHorizontal == 1f)
         {
             sr.flipX = false;
             animator.SetBool("isWalking", true);
         }
 
         
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            SceneManager.LoadScene(3);
-        }
         
     }
     void FixedUpdate()
     {
         rb2D.velocity = new Vector2(moveHorizontal * speed, 0f);
     }
-
 }

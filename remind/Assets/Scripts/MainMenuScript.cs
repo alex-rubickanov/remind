@@ -14,7 +14,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void OptionsButton() 
     { 
-        optionsCanvas.SetActive(true);
+       
     }
 
     public void ExitButton()
