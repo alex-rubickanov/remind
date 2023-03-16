@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype/MiniGame Prototype.unity
     guid: 197a51cc4c8ee4b4e817eeb4223197a7
+  - enabled: 1
+    path: Assets/Scenes/ParentsRoom.unity
+    guid: 2003334eaaea62245b929daa5a07e355
   m_configObjects: {}
