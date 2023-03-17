@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ParentsDoor : MonoBehaviour
+public class KidsRoomDoor : MonoBehaviour
 {
 
     
-    [SerializeField] bool isParentsRoomDoor = false;
+    [SerializeField] bool isKidsRoomDoor = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isParentsRoomDoor = true;
+        isKidsRoomDoor = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isParentsRoomDoor = false;
+        isKidsRoomDoor = false;
     }
 
     private void Update()
     {
-        if(isParentsRoomDoor && Input.GetKeyDown(KeyCode.F))
+        if (isKidsRoomDoor && Input.GetKeyDown(KeyCode.F))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
     }
 }

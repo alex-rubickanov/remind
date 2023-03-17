@@ -11,9 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
 
     [SerializeField] GameObject playerPrefab;
-
-    [SerializeField] GameObject[] respawns;
-
+    [SerializeField] GameObject[] spawners;
+    [SerializeField] Scene houseScene;  
 
     private void Awake() //singleton
     {
@@ -29,11 +28,12 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-       
+        Instantiate(playerPrefab, spawners[0].transform.position, Quaternion.identity);
     }
     private void Update()
     {
         DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(pauseMenu);
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -41,15 +41,12 @@ public class GameManager : MonoBehaviour
         }
 
 
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(SceneManager.GetActiveScene().buildIndex == 4 && Input.GetKeyDown(KeyCode.Q))
         {
-            SceneManager.LoadScene(4);
-        }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
+            
             SceneManager.LoadScene(2);
+            
+
         }
     }
 
@@ -75,10 +72,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void ParentsRoomDoor()
+
+
+   /* public void ParentsRoomDoor()
     {
         SceneManager.LoadScene(4);
-        Instantiate(playerPrefab, respawns[3].transform);
-    }
+       
+    } */
     
 }

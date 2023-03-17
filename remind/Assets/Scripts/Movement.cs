@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float speed;
     SpriteRenderer sr;
 
+
     Animator animator;
     void Start()
     {
