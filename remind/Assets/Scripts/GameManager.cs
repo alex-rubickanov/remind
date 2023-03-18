@@ -12,7 +12,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject playerPrefab;
     [SerializeField] GameObject[] spawners;
-    [SerializeField] Scene houseScene;  
+
+    [SerializeField] VectorValue pastPos;
+    
+
 
     private void Awake() //singleton
     {
@@ -24,12 +27,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+    }
+    public void Start()
+    {
+        pastPos.initialValue = new Vector3(-16f, -1.1f, 0f);
     }
 
-    private void Start()
-    {
-        Instantiate(playerPrefab, spawners[0].transform.position, Quaternion.identity);
-    }
     private void Update()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -40,16 +44,23 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-
-        if(SceneManager.GetActiveScene().buildIndex == 4 && Input.GetKeyDown(KeyCode.Q))
+        if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.Q))
         {
+            SceneManager.LoadScene("House");
             
-            SceneManager.LoadScene(2);
-            
+        }
+
+        if (SceneManager.GetActiveScene().name == "KidsRoom" && Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("House");
 
         }
     }
 
+
+
+
+    //------------------ PAUSE ------------------
     public void Pause()
     {
         if (isGameOnPause == false)
@@ -73,11 +84,5 @@ public class GameManager : MonoBehaviour
     }
 
 
-
-   /* public void ParentsRoomDoor()
-    {
-        SceneManager.LoadScene(4);
-       
-    } */
     
 }

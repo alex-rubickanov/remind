@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 496093279}
   - component: {fileID: 496093278}
   m_Layer: 0
-  m_Name: door
+  m_Name: MainDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,6 +412,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.96, y: 9.54}
   m_EdgeRadius: 0
+--- !u!1001 &850559649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3569624003531880648, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_Name
+      value: Althea
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
 --- !u!1 &887092158
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +610,7 @@ Transform:
   - {fileID: 1541068801}
   - {fileID: 804590291}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974458954
 GameObject:
@@ -650,7 +707,7 @@ GameObject:
   - component: {fileID: 1044353614}
   - component: {fileID: 1044353613}
   m_Layer: 0
-  m_Name: cildrens_door
+  m_Name: KidsDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -733,7 +790,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b039fbd3a7ea9974bba33fd47e1c0e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pastPos: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
   isKidsRoomDoor: 0
+  player: {fileID: 1107757698}
 --- !u!61 &1044353614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -747,7 +806,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.046051502, y: -0.5219171}
+  m_Offset: {x: 0.00000047683716, y: -0.52191734}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -758,8 +817,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.577154, y: 8.523836}
+  m_Size: {x: 3.9500012, y: 8.523836}
   m_EdgeRadius: 0
+--- !u!114 &1107757698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8849891293344106292, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+  m_PrefabInstance: {fileID: 850559649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f37bae6cc32be345b24d822f0bb03e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1199807351
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +894,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1541068799
 GameObject:
@@ -1060,7 +1130,7 @@ GameObject:
   - component: {fileID: 1980668782}
   - component: {fileID: 1980668781}
   m_Layer: 0
-  m_Name: door (1)
+  m_Name: ParentsDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1143,7 +1213,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d338d401d30773b4b8120dcf4703bbf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pastPos: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
   isParentsRoomDoor: 0
+  player: {fileID: 1107757698}
 --- !u!61 &1980668782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1157,7 +1229,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011279583, y: -0.62039804}
+  m_Offset: {x: 0.0040709376, y: -0.62039804}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1168,7 +1240,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.281039, y: 8.720801}
+  m_Size: {x: 3.9608955, y: 8.720801}
   m_EdgeRadius: 0
 --- !u!1 &2060284809
 GameObject:
@@ -1252,7 +1324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2060284813
 MonoBehaviour:
@@ -1404,6 +1476,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 359432681092009671, guid: cac7f09add861a742a19d800fb23934b, type: 3}
+      propertyPath: pastPos
+      value: 
+      objectReference: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
+    - target: {fileID: 359432681092009671, guid: cac7f09add861a742a19d800fb23934b, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 89710414}
@@ -1434,7 +1510,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 746787484368468232, guid: 7a67fbb7536d75d49950f985b18f8c76, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 746787484368468232, guid: 7a67fbb7536d75d49950f985b18f8c76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1491,7 +1567,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1444036933719815028, guid: 1d4abfe310b14004f8cb6ff41980ee05, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1444036933719815028, guid: 1d4abfe310b14004f8cb6ff41980ee05, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1552,7 +1628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2204773215990779725, guid: cd9d14d808679fb48b92dc5acd0a7d6c, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2204773215990779725, guid: cd9d14d808679fb48b92dc5acd0a7d6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1607,6 +1683,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6434004358931990648, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434004358931990648, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434004358931990648, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6434004358931990650, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1617,7 +1705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6434004358931990650, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6434004358931990650, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
       propertyPath: m_AnchorMax.x

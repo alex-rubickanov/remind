@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3569624003531880651}
   - component: {fileID: 3569624003531880650}
   - component: {fileID: 3569624003531880649}
-  - component: {fileID: 3569624003531880653}
   - component: {fileID: 3569624003531880652}
   - component: {fileID: 3569624003531880654}
+  - component: {fileID: 8849891293344106292}
   m_Layer: 0
   m_Name: Althea
   m_TagString: Player
@@ -106,20 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &3569624003531880653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3569624003531880648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de91f6dc05f820419b3a924e32c87d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveHorizontal: 0
-  speed: 3
 --- !u!50 &3569624003531880652
 Rigidbody2D:
   serializedVersion: 4
@@ -167,3 +153,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.7503214, y: 11.85337}
   m_EdgeRadius: 0
+--- !u!114 &8849891293344106292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3569624003531880648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f37bae6cc32be345b24d822f0bb03e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveHorizontal: 0
+  speed: 3
+  pastPos: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
+  roomsPos: {fileID: 11400000, guid: 63fa1176b4fceed46a7bc62551d38e14, type: 2}

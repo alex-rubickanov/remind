@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     [SerializeField] GameObject optionsCanvas;
+    [SerializeField] Animator animator;
 
     public void PlayButton()
     {
-        SceneManager.LoadScene(1);
+        animator.SetTrigger("FadeOut");
+        
     }
 
     public void OptionsButton() 
@@ -20,5 +22,10 @@ public class MainMenuScript : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+
+    public void FadeInEvent()
+    {
+        SceneManager.LoadScene(1);
     }
 }
