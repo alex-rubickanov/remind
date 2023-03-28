@@ -15,8 +15,8 @@ public class CabinetMinigame : MonoBehaviour
 
     [SerializeField] GameObject currentObject;
 
-    [Header("BUTTONS AND WIN SCREEN")]
-    [SerializeField] GameObject winScreen;
+    //[Header("BUTTONS AND WIN SCREEN")]
+    //[SerializeField] GameObject winScreen;
     void Start()
     {
         randomList = RandomSequence(gameObjects);
@@ -57,7 +57,7 @@ public class CabinetMinigame : MonoBehaviour
         else
         {
             Debug.Log("PLAYER WON");
-            winScreen.SetActive(true);
+            //winScreen.SetActive(true);
         }
 
     }
@@ -66,8 +66,10 @@ public class CabinetMinigame : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("BlueClothes"))
         {
-            StartCoroutine(ClothesAnimation(currentObject, 1f));
-            
+            currentObject.GetComponent<BlueClothes>().ClothAnimation();
+            Destroy(currentObject, 1f);
+            randomList.RemoveAt(0);
+            InstantiateNewObject();
         }
         else
         {
@@ -79,7 +81,8 @@ public class CabinetMinigame : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("PinkClothes"))
         {
-            Destroy(currentObject);
+            currentObject.GetComponent<PinkClothes>().ClothAnimation();
+            Destroy(currentObject, 1f);
             randomList.RemoveAt(0);
             InstantiateNewObject();
         }
@@ -87,41 +90,6 @@ public class CabinetMinigame : MonoBehaviour
         {
             Debug.Log("WRONG CABINET");
         }
-    }
-
-    IEnumerator ClothesAnimation(GameObject gameObject, float time)
-    {
-        if(gameObject.tag == "PinkClothes")
-        {
-            Vector3 startingPos = gameObject.transform.position;
-            Vector3 finalPos = gameObject.transform.position + (-gameObject.transform.right * 4);
-            float elapsedTime = 0;
-
-            while (elapsedTime < time)
-            {
-                gameObject.transform.position = Vector3.Lerp(startingPos, finalPos, (elapsedTime / time));
-                elapsedTime += Time.deltaTime;
-                    
-            }
-        }
-
-        if(gameObject.tag == "BlueClothes")
-        {
-            Vector3 startingPos = gameObject.transform.position;
-            Vector3 finalPos = gameObject.transform.position + (gameObject.transform.right * 4);
-            float elapsedTime = 0;
-
-            while (elapsedTime < time)
-            {
-                gameObject.transform.position = Vector3.Lerp(startingPos, finalPos, (elapsedTime / time));
-                elapsedTime += Time.deltaTime;
-
-            }
-        }
-        randomList.RemoveAt(0);
-        InstantiateNewObject();
-        Destroy(gameObject);
-        yield return null;
     }
 
     public void ExitButton()
