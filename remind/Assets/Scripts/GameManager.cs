@@ -11,11 +11,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
 
     [SerializeField] GameObject playerPrefab;
-    [SerializeField] GameObject[] spawners;
-
-    [SerializeField] VectorValue pastPos;
     
 
+    [SerializeField] VectorValue pastPos;
+    [SerializeField] Player player;
+
+    [SerializeField] GameObject bookDialoguePrefab;
+    [SerializeField] GameObject dialogueNathPrefab;
+
+    [SerializeField] Canvas fridgeNotes;
+
+    bool houseSceneOnce = true;
 
     private void Awake() //singleton
     {
@@ -31,30 +37,54 @@ public class GameManager : MonoBehaviour
     }
     public void Start()
     {
-        pastPos.initialValue = new Vector3(-16f, -1.1f, 0f);
+        Instantiate(pauseMenu);
+        pauseMenu.SetActive(false);
+        pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0f);
+        Instantiate(bookDialoguePrefab);
+
+        
+
+        
     }
 
     private void Update()
     {
-        DontDestroyOnLoad(this.gameObject);
-        DontDestroyOnLoad(pauseMenu);
+        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(pauseMenu);
+
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
         }
 
-        if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.Q))
+
+        
+
+        
+
+
+
+        if (!isGameOnPause)
         {
-            SceneManager.LoadScene("House");
+            if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.Q))
+            {
+                SceneManager.LoadScene("House");
+                if (SceneManager.GetActiveScene().name == "House" && houseSceneOnce)
+                {
+                    Instantiate(dialogueNathPrefab);
+                }
+
+            }
+
+            if (SceneManager.GetActiveScene().name == "KidsRoom" && Input.GetKeyDown(KeyCode.Q))
+            {
+                SceneManager.LoadScene("House");
+
+            }
             
         }
-
-        if (SceneManager.GetActiveScene().name == "KidsRoom" && Input.GetKeyDown(KeyCode.Q))
-        {
-            SceneManager.LoadScene("House");
-
-        }
+        
     }
 
 
@@ -69,12 +99,14 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             isGameOnPause = true;
             pauseMenu.SetActive(true);
-        } else 
-        {
+            player.isAbleToInput = false;
+        } else if (isGameOnPause == true) 
+        {   
             Debug.Log("Unpause");
             Time.timeScale = 1;
             isGameOnPause = false;
             pauseMenu.SetActive(false);
+            player.isAbleToInput = true;
         }
     }
 
