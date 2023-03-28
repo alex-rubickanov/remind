@@ -17,8 +17,11 @@ public class Player : MonoBehaviour
     [SerializeField] VectorValue pastPos;
     [SerializeField] VectorValue roomsPos;
 
+    public bool isAbleToInput = true;
+
     void Start()
     {
+        
         if(SceneManager.GetActiveScene().name == "House")
         {
             transform.position = pastPos.initialValue;
@@ -35,22 +38,26 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        moveHorizontal = Input.GetAxisRaw("Horizontal");
+        if(isAbleToInput) 
+        {
+            moveHorizontal = Input.GetAxisRaw("Horizontal");
 
-        if (moveHorizontal == 0f)
-        {
-            animator.SetBool("isWalking", false);
+            if (moveHorizontal == 0f)
+            {
+                animator.SetBool("isWalking", false);
+            }
+            else if (moveHorizontal == -1f)
+            {
+                sr.flipX = true;
+                animator.SetBool("isWalking", true);
+            }
+            else if (moveHorizontal == 1f)
+            {
+                sr.flipX = false;
+                animator.SetBool("isWalking", true);
+            }
         }
-        else if (moveHorizontal == -1f)
-        {
-            sr.flipX = true;
-            animator.SetBool("isWalking", true);
-        }
-        else if (moveHorizontal == 1f)
-        {
-            sr.flipX = false;
-            animator.SetBool("isWalking", true);
-        }
+        
 
 
 

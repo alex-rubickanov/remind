@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,9 +10,13 @@ public class Dialouge : MonoBehaviour
     public string[] lines;
     public float textspeed;
     private int index;
+    [SerializeField] Player player;
+
+    public bool finished = false;
 
     void Start()
     {
+        //player.isAbleToInput = false;
         textcomponent.text = string.Empty;
         StartDialouge();
     }
@@ -56,7 +61,10 @@ public class Dialouge : MonoBehaviour
         }
         else
         {
+            finished = true;
+           // player.isAbleToInput = true;
             gameObject.SetActive(false);
+            
         }
     }
 }

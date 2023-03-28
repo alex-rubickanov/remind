@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: 7444760009064180342, guid: fa55b519e222c424295547d0a6815551, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 8.401541, y: 13.42}
@@ -169,3 +169,4 @@ MonoBehaviour:
   speed: 3
   pastPos: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
   roomsPos: {fileID: 11400000, guid: 63fa1176b4fceed46a7bc62551d38e14, type: 2}
+  canMove: 1

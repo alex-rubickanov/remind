@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 83b8b01e7226f1e40be9b8b1ada173fa
+<<<<<<<< HEAD:remind/Assets/Sprites/Sprite Sheets/window_0000_sheet.png.meta
+guid: 33fd68d6426918648846b06504142f5e
+========
+guid: d4d6a052abe995f4db053bece3b6b8e6
+>>>>>>>> alex:remind/Assets/Sprites/sticky notes fridge 1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
