@@ -1,0 +1,877 @@
+fileFormatVersion: 2
+guid: fa55b519e222c424295547d0a6815551
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7444760009064180342
+    second: althea_idle_sheet_0
+  - first:
+      213: 8400530231149194143
+    second: althea_idle_sheet_1
+  - first:
+      213: 6695218571645052757
+    second: althea_idle_sheet_2
+  - first:
+      213: 4062967341827026465
+    second: althea_idle_sheet_3
+  - first:
+      213: -2211949414806142569
+    second: althea_idle_sheet_4
+  - first:
+      213: -2123025675729928130
+    second: althea_idle_sheet_5
+  - first:
+      213: 2024932484612088439
+    second: althea_idle_sheet_6
+  - first:
+      213: -6998264898056366297
+    second: althea_idle_sheet_7
+  - first:
+      213: 5964325171112099941
+    second: althea_idle_sheet_8
+  - first:
+      213: -2394426411806892756
+    second: althea_idle_sheet_9
+  - first:
+      213: -626159424428749482
+    second: althea_idle_sheet_10
+  - first:
+      213: 2384464529490199700
+    second: althea_idle_sheet_11
+  - first:
+      213: 5608558503045963500
+    second: althea_idle_sheet_12
+  - first:
+      213: 3863924968979118947
+    second: althea_idle_sheet_13
+  - first:
+      213: 3348035517604914276
+    second: althea_idle_sheet_14
+  - first:
+      213: 6932655385418569877
+    second: althea_idle_sheet_15
+  - first:
+      213: -2821051230561727623
+    second: althea_idle_sheet_16
+  - first:
+      213: 5808259709362667576
+    second: althea_idle_sheet_17
+  - first:
+      213: -3859599283309886405
+    second: althea_idle_sheet_18
+  - first:
+      213: -7751963245003780628
+    second: althea_idle_sheet_19
+  - first:
+      213: -8418079674464143318
+    second: althea_idle_sheet_20
+  - first:
+      213: 6874991378121894555
+    second: althea_idle_sheet_21
+  - first:
+      213: -7297413268644142470
+    second: althea_idle_sheet_22
+  - first:
+      213: -428689999536086221
+    second: althea_idle_sheet_23
+  - first:
+      213: 537739577252757861
+    second: althea_idle_sheet_24
+  - first:
+      213: 1164655295534676458
+    second: althea_idle_sheet_25
+  - first:
+      213: -3331921538822429973
+    second: althea_idle_sheet_26
+  - first:
+      213: -5383850135809279894
+    second: althea_idle_sheet_27
+  - first:
+      213: -8567324028508141868
+    second: althea_idle_sheet_28
+  - first:
+      213: 2504742888719671812
+    second: althea_idle_sheet_29
+  - first:
+      213: 7031037340648449968
+    second: althea_idle_sheet_30
+  - first:
+      213: 2328767815317063291
+    second: althea_idle_sheet_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: althea_idle_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67aed42c8c9115760800000000000000
+      internalID: 7444760009064180342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9be390ccbda49470800000000000000
+      internalID: 8400530231149194143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557608071d13aec50800000000000000
+      internalID: 6695218571645052757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12eec97554f826830800000000000000
+      internalID: 4062967341827026465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791c8550ab39d41e0800000000000000
+      internalID: -2211949414806142569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30851d656f7982e0800000000000000
+      internalID: -2123025675729928130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5368
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772e37fbd510a1c10800000000000000
+      internalID: 2024932484612088439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727d343572b21ee90800000000000000
+      internalID: -6998264898056366297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560ce0d842a85c250800000000000000
+      internalID: 5964325171112099941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ddf6b5dd945ced0800000000000000
+      internalID: -2394426411806892756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d492e225f6f47f0800000000000000
+      internalID: -626159424428749482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49448cb2bd1571120800000000000000
+      internalID: 2384464529490199700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee1d0c3e3a95dd40800000000000000
+      internalID: 5608558503045963500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4026
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b33ce894b6f9530800000000000000
+      internalID: 3863924968979118947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4646b3a809c967e20800000000000000
+      internalID: 3348035517604914276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598921e975db53060800000000000000
+      internalID: 6932655385418569877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b80353adc99d8d0800000000000000
+      internalID: -2821051230561727623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83086c3ae651b9050800000000000000
+      internalID: 5808259709362667576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3446fe96e2ff6ac0800000000000000
+      internalID: -3859599283309886405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced4aa5108e7b6490800000000000000
+      internalID: -7751963245003780628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 2684
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28f0a01329fc2b80800000000000000
+      internalID: -8418079674464143318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a24deab30e86f50800000000000000
+      internalID: 6874991378121894555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a726e37ab416aba90800000000000000
+      internalID: -7297413268644142470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333a3ea77bcfc0af0800000000000000
+      internalID: -428689999536086221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561c1d3eb4f667700800000000000000
+      internalID: 537739577252757861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae93f1812dfa92010800000000000000
+      internalID: 1164655295534676458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be224038303a2c1d0800000000000000
+      internalID: -3331921538822429973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 1342
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68362b83d8b845b0800000000000000
+      internalID: -5383850135809279894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d68a1d0030ca1980800000000000000
+      internalID: -8567324028508141868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40262d7f262a2c220800000000000000
+      internalID: 2504742888719671812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7abd39533439160800000000000000
+      internalID: 7031037340648449968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: althea_idle_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 840
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76065c5df1715020800000000000000
+      internalID: 2328767815317063291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
