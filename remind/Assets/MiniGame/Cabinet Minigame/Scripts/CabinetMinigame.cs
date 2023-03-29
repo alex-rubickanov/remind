@@ -81,7 +81,7 @@ public class CabinetMinigame : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("PinkClothes"))
         {
-            currentObject.GetComponent<PinkClothes>().ClothAnimation();
+            currentObject.GetComponent<PinkClothes>().ClothAnimation();  
             Destroy(currentObject, 1f);
             randomList.RemoveAt(0);
             InstantiateNewObject();

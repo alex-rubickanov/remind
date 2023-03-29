@@ -368,12 +368,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjects:
-  - {fileID: 3244264155970962448, guid: 994de7e614742f1489f97cad9eed89b7, type: 3}
-  - {fileID: 5908532570916887696, guid: 7453f0f5af83edf40ae148b2d54efc02, type: 3}
+  - {fileID: 3776872091821254313, guid: 147f60a3347f2ab43a07b03201fabec2, type: 3}
+  - {fileID: 3710195255352636084, guid: 4ad749330e8fded4f907d99ed47ec9e5, type: 3}
+  - {fileID: 2945247180658578356, guid: 94f847f38b8225b47b93813f5878d5bc, type: 3}
+  - {fileID: 6870251687904829678, guid: 0e819b3f45853724fa0c75f758601daf, type: 3}
+  - {fileID: 4125358251504135324, guid: 732b7bebebe16dd4ea99f381f3bba71f, type: 3}
+  - {fileID: 9096882528188924666, guid: f9b6f9d48fdcf6946b06c343684fa078, type: 3}
   randomList: []
   maxRandomArray: 10
   currentObject: {fileID: 0}
-  winScreen: {fileID: 0}
 --- !u!1 &837883291
 GameObject:
   m_ObjectHideFlags: 0
