@@ -8,6 +8,8 @@ TagManager:
   - Fork
   - Spoon
   - Border
+  - PinkClothes
+  - BlueClothes
   layers:
   - Default
   - TransparentFX
