@@ -15,25 +15,32 @@ public class CabinetMinigame : MonoBehaviour
 
     [SerializeField] GameObject currentObject;
 
-    //[Header("BUTTONS AND WIN SCREEN")]
-    //[SerializeField] GameObject winScreen;
+    [SerializeField] GameObject winScreen;
+    [SerializeField] GameObject gameManager;
+
+   
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
         randomList = RandomSequence(gameObjects);
         InstantiateNewObject();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if(randomList.Count > 0)
         {
-            PinkCloset();
-        }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                PinkCloset();
+            }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            BlueCloset();
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                BlueCloset();
+            }
         }
+        
     }
 
     List<GameObject> RandomSequence(GameObject[] gameObjects)
@@ -57,7 +64,10 @@ public class CabinetMinigame : MonoBehaviour
         else
         {
             Debug.Log("PLAYER WON");
-            //winScreen.SetActive(true);
+            
+            //Time.timeScale = 0;
+            winScreen.SetActive(true);
+            
         }
 
     }
@@ -66,9 +76,16 @@ public class CabinetMinigame : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("BlueClothes"))
         {
-            currentObject.GetComponent<BlueClothes>().ClothAnimation();
+            if (currentObject.GetComponent<BlueClothes>() != null)
+            {
+                currentObject.GetComponent<BlueClothes>().ClothAnimation();
+            }
             Destroy(currentObject, 1f);
-            randomList.RemoveAt(0);
+            if(randomList.Count != 0)
+            {
+                randomList.RemoveAt(0);
+            }
+            
             InstantiateNewObject();
         }
         else
@@ -81,9 +98,16 @@ public class CabinetMinigame : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("PinkClothes"))
         {
-            currentObject.GetComponent<PinkClothes>().ClothAnimation();  
+            if (currentObject.GetComponent<PinkClothes>() != null)
+            {
+                currentObject.GetComponent<PinkClothes>().ClothAnimation();
+            }
             Destroy(currentObject, 1f);
-            randomList.RemoveAt(0);
+
+            if (randomList.Count != 0)
+            {
+                randomList.RemoveAt(0);
+            }
             InstantiateNewObject();
         }
         else
@@ -94,7 +118,8 @@ public class CabinetMinigame : MonoBehaviour
 
     public void ExitButton()
     {
-        SceneManager.LoadScene(0);
+        gameManager.GetComponent<GameManager>().isCabinetMinigameCompleted = true;
+        SceneManager.LoadScene(5);
     }
 }
 

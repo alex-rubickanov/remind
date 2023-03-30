@@ -35,7 +35,7 @@ public class FridgeNotes : MonoBehaviour
         if (isFridgeNotesEnabled == false)
         {
             Debug.Log("Show notes");
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
 
             isFridgeNotesEnabled = true;
             fridgeNotes.SetActive(true);
@@ -43,7 +43,7 @@ public class FridgeNotes : MonoBehaviour
         else
         {
             Debug.Log("Hide notes");
-            //Time.timeScale = 1;
+            Time.timeScale = 1;
 
             isFridgeNotesEnabled = false;
             fridgeNotes.SetActive(false);

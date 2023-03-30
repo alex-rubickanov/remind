@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ParentsRoom.unity
     guid: 2003334eaaea62245b929daa5a07e355
   - enabled: 1
-    path: Assets/House.unity
+    path: Assets/Scenes/House.unity
     guid: e45cbac1180abe546b5945771533e98d
   - enabled: 1
     path: Assets/Scenes/DishWashingMinigame.unity
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KidsRoom.unity
     guid: 32015bd50e6c678489f92a5cc90add65
+  - enabled: 1
+    path: Assets/Scenes/CabinetMinigame.unity
+    guid: 3887b63e5a5b3254fb02c3d68ccafe18
   m_configObjects: {}

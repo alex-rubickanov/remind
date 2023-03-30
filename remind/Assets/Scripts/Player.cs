@@ -33,12 +33,13 @@ public class Player : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        
     }
 
 
     void Update()
     {
-        if(isAbleToInput) 
+        if(Time.timeScale == 1) 
         {
             moveHorizontal = Input.GetAxisRaw("Horizontal");
 

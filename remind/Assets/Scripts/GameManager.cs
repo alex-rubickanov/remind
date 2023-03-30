@@ -23,6 +23,12 @@ public class GameManager : MonoBehaviour
 
     bool houseSceneOnce = true;
 
+    public bool isDishwashingCompleted = false;
+    public bool isCabinetMinigameCompleted = false;
+
+    [SerializeField] GameObject dishwashingCompleted;
+    [SerializeField] GameObject cabinetCompleted;
+
     private void Awake() //singleton
     {
         if (instance == null)
@@ -41,16 +47,12 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(false);
         pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0f);
         Instantiate(bookDialoguePrefab);
-
-        
-
-        
     }
 
     private void Update()
     {
         DontDestroyOnLoad(gameObject);
-        //DontDestroyOnLoad(pauseMenu);
+        DontDestroyOnLoad(pauseMenu);
 
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -58,10 +60,20 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
+        if(isCabinetMinigameCompleted == true)
+        {
+            cabinetCompleted.SetActive(true);
+        }
 
-        
+        if (isDishwashingCompleted == true)
+        {
+            dishwashingCompleted.SetActive(true);
+        }
 
-        
+
+
+
+
 
 
 
