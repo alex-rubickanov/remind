@@ -16,6 +16,8 @@ public class DishWashingMinigame : MonoBehaviour
     [SerializeField] GameObject currentObject;
     [SerializeField] GameObject gameManager;
 
+    int mistakes = 0;
+
     [Header("BUTTONS AND WIN SCREEN")]
     [SerializeField] Button plateButton;
     [SerializeField] Button spoonButton;
@@ -30,7 +32,10 @@ public class DishWashingMinigame : MonoBehaviour
 
     void Update()
     {
-       
+       if (mistakes >= 3)
+        {
+            Utils.ShowJumpscare();
+        }
     }
 
     List<GameObject> RandomSequence(GameObject[] gameObjects)
@@ -74,6 +79,7 @@ public class DishWashingMinigame : MonoBehaviour
         } else
         {
             Debug.Log("WRONG SHELF");
+            mistakes++;
         }
     }
 
@@ -88,6 +94,7 @@ public class DishWashingMinigame : MonoBehaviour
         else
         {
             Debug.Log("WRONG SHELF");
+            mistakes++;
         }
     }
 
@@ -102,6 +109,7 @@ public class DishWashingMinigame : MonoBehaviour
         else
         {
             Debug.Log("WRONG SHELF");
+            mistakes++;
         }
     }
 
