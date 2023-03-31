@@ -227,6 +227,4 @@ MonoBehaviour:
   - {fileID: 5635058836639098859, guid: 8e209df14292c674892fc1afa52e1381, type: 3}
   - {fileID: 4828195966232816861, guid: 05a05038e9879c741b6b09afb318c3e2, type: 3}
   - {fileID: 6137347551958547957, guid: b35b86a707f84ff45acf0683b88ec16f, type: 3}
-  randomList: []
-  maxRandomArray: 7
   currentObject: {fileID: 0}
