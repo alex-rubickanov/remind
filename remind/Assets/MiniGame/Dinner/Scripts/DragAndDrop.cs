@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DragAndDrop : MonoBehaviour
 {
     public GameObject correctPosition;
+
     private bool movingPlate;
+    private bool plateCorrect;
+
     private float startPosX;
     private float startPosY;
+
+    private int wrongMoveCounter = 0;
+
     private Vector2 resetPosition;
 
     
@@ -22,13 +29,16 @@ public class DragAndDrop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movingPlate)
+        if (plateCorrect == false)
         {
-            Vector2 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            if (movingPlate)
+            {
+                Vector2 mousePos;
+                mousePos = Input.mousePosition;
+                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            this.gameObject.transform.localPosition = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
+                this.gameObject.transform.localPosition = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
+            }
         }
     }
 
@@ -53,6 +63,8 @@ public class DragAndDrop : MonoBehaviour
         if (Mathf.Abs(this.transform.localPosition.x - correctPosition.transform.localPosition.x) <= 0.5f && Mathf.Abs(this.transform.localPosition.y - correctPosition.transform.localPosition.y) <= 0.5f)
         {
             this.transform.localPosition = new Vector2(correctPosition.transform.localPosition.x, correctPosition.transform.localPosition.y);
+
+            plateCorrect = true;
             
             if(nextPlate != null)
             {
@@ -63,6 +75,12 @@ public class DragAndDrop : MonoBehaviour
         else
         {
             this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
+            wrongMoveCounter += 1;
+
+            if (wrongMoveCounter == 3)
+            {
+                SceneManager.LoadScene(6);
+            }
         }
     }
 }
