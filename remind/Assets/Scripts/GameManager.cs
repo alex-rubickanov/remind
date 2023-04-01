@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.U2D.IK;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -111,7 +110,10 @@ public class GameManager : MonoBehaviour
             fridgeNotes = GameObject.Find("FridgeNotes");
         }
 
-
+        if(SceneManager.GetActiveScene().name == "House" && isCabinetMinigameCompleted && isDishwashingCompleted && isTableMinigameCompleted)
+        {
+            SceneManager.LoadScene(9);
+        }
 
 
 
