@@ -22,4 +22,5 @@ public class BlueClothes : MonoBehaviour
     {
         StartCoroutine(SmoothLerp(1f));
     }
+
 }

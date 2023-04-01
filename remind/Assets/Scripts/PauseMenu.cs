@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    PauseMenu instance;
+    static PauseMenu instance;
 
     private void Awake() //singleton
     {

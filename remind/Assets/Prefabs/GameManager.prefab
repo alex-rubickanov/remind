@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf9e10bcd86ed54799d57536ce34eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameOnPause: 0
   pauseMenu: {fileID: 6434004358931990630, guid: cdd854d7a1f9cc044bed1bbd48c9a5d3, type: 3}
   playerPrefab: {fileID: 3569624003531880648, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
   pastPos: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
@@ -52,5 +53,7 @@ MonoBehaviour:
   fridgeNotes: {fileID: 8861565549446957248, guid: eecaa99e03647f64aabee3160151d95f, type: 3}
   isDishwashingCompleted: 0
   isCabinetMinigameCompleted: 0
+  isTableMinigameCompleted: 0
   dishwashingCompleted: {fileID: 2520313182981437292, guid: 4cd786b848f37c846b7be86670dc7def, type: 3}
   cabinetCompleted: {fileID: 5224951589932213726, guid: f289f4f33cda2f648b57073ada8cb0b4, type: 3}
+  index: {fileID: 11400000, guid: f4cf8cb1e9db68d4ca7251f3376c8a74, type: 2}

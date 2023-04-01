@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.IK;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,13 +21,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject bookDialoguePrefab;
     [SerializeField] GameObject dialogueNathPrefab;
 
-    [SerializeField] Canvas fridgeNotes;
+    GameObject fridgeNotes;
 
-    bool houseSceneOnce = true;
+    bool houseSceneOnce = false;
+    bool parentsSceneOnce = false;
 
     public bool isDishwashingCompleted = false;
     public bool isCabinetMinigameCompleted = false;
     public bool isTableMinigameCompleted = false;
+    
 
     [SerializeField] GameObject dishwashingCompleted;
     [SerializeField] GameObject cabinetCompleted;
@@ -47,10 +50,11 @@ public class GameManager : MonoBehaviour
     }
     public void Start()
     {
-        Instantiate(pauseMenu);
+        pauseMenu = Instantiate(pauseMenu);
+        
         pauseMenu.SetActive(false);
         pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0f);
-        Instantiate(bookDialoguePrefab);
+        
     }
 
     private void Update()
@@ -78,6 +82,14 @@ public class GameManager : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Cutscene")
         {
+            isTableMinigameCompleted = false;
+            isCabinetMinigameCompleted = false;
+            isDishwashingCompleted = false;
+            houseSceneOnce = false;
+            isGameOnPause = false;
+            parentsSceneOnce = false;
+
+            pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0);
             pauseMenu.SetActive(false);
             Time.timeScale = 1f;
         }
@@ -86,6 +98,17 @@ public class GameManager : MonoBehaviour
         if(!pauseMenu.activeSelf == isGameOnPause) 
         {
             isGameOnPause = pauseMenu.activeSelf;
+        }
+
+        if(SceneManager.GetActiveScene().name == "House" && ( isCabinetMinigameCompleted || isDishwashingCompleted || isTableMinigameCompleted))
+        {
+            GameObject nath = GameObject.Find("Nath");
+            Destroy(nath); 
+        }
+
+        if(SceneManager.GetActiveScene().name == "House")
+        {
+            fridgeNotes = GameObject.Find("FridgeNotes");
         }
 
 
@@ -109,10 +132,16 @@ public class GameManager : MonoBehaviour
             
         }
 
-        if (SceneManager.GetActiveScene().name == "House" && houseSceneOnce)
+        if (SceneManager.GetActiveScene().name == "House" && !houseSceneOnce)
         {
             Instantiate(dialogueNathPrefab);
-            houseSceneOnce = false;
+            houseSceneOnce = true;
+        }
+
+        if (SceneManager.GetActiveScene().name == "ParentsRoom" && !parentsSceneOnce)
+        {
+            Instantiate(bookDialoguePrefab);
+            parentsSceneOnce = true;
         }
 
     }
@@ -123,24 +152,30 @@ public class GameManager : MonoBehaviour
     //------------------ PAUSE ------------------
     public void Pause()
     {
-        if (isGameOnPause == false)
+        if (fridgeNotes == null || !fridgeNotes.activeSelf)
         {
-            Debug.Log("Pause!");
-            Time.timeScale = 0;
-            isGameOnPause = true;
-            pauseMenu.SetActive(true);
-        } else if (isGameOnPause == true) 
-        {   
-            Debug.Log("Unpause");
-            Time.timeScale = 1;
-            isGameOnPause = false;
-            pauseMenu.SetActive(false);
+            if (isGameOnPause == false)
+            {
+                Debug.Log("Pause!");
+                Time.timeScale = 0;
+                isGameOnPause = true;
+                pauseMenu.SetActive(true);
+            }
+            else if (isGameOnPause == true)
+            {
+                Debug.Log("Unpause");
+                Time.timeScale = 1;
+                isGameOnPause = false;
+                pauseMenu.SetActive(false);
+            }
         }
+
+
     }
 
     public void BackToMainMenuButton()
     {
-        isGameOnPause = false;
+        
         SceneManager.LoadScene(0);
         
     }

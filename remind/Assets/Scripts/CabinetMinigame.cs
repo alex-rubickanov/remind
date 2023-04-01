@@ -29,23 +29,34 @@ public class CabinetMinigame : MonoBehaviour
 
     void Update()
     {
-        if(randomList.Count > 0)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if(Time.timeScale != 0)
             {
-                PinkCloset();
-            }
+                if (randomList.Count > 0)
+                {
+                    if (Input.GetKeyDown(KeyCode.A))
+                    {
+                        PinkCloset();
+                    }
 
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                BlueCloset();
+                    if (Input.GetKeyDown(KeyCode.D))
+                    {
+                        BlueCloset();
+                    }
+                }
+
+                if (mistakes >= 3)
+                {
+                    SceneManager.LoadScene("Jumpscare");
+                }
+
+                if (currentObject == null)
+                {
+                    InstantiateNewObject();
+                }
             }
         }
-
-        if(mistakes >= 3)
-        {
-            SceneManager.LoadScene("Jumpscare");
-        }
+        
         
     }
 
@@ -60,7 +71,7 @@ public class CabinetMinigame : MonoBehaviour
         return randomList;
     }
 
-    void InstantiateNewObject()
+    private void InstantiateNewObject()
     {
         //currentObject = Instantiate(randomArray[0]);
         if (randomList.Count >= 1)
@@ -92,7 +103,7 @@ public class CabinetMinigame : MonoBehaviour
                 randomList.RemoveAt(0);
             }
             
-            InstantiateNewObject();
+            
         }
         else
         {
@@ -115,7 +126,7 @@ public class CabinetMinigame : MonoBehaviour
             {
                 randomList.RemoveAt(0);
             }
-            InstantiateNewObject();
+            
         }
         else
         {
