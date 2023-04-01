@@ -9,7 +9,6 @@ public class StartCabinetMinigame : MonoBehaviour
     
     [SerializeField] GameObject player;
     GameObject gameManager;
-    [SerializeField] PreviousScene index;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isCabinetTrigger = true;

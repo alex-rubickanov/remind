@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     public bool isDishwashingCompleted = false;
     public bool isCabinetMinigameCompleted = false;
+    public bool isTableMinigameCompleted = false;
 
     [SerializeField] GameObject dishwashingCompleted;
     [SerializeField] GameObject cabinetCompleted;
