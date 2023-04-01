@@ -11,6 +11,7 @@ public class StartDishwashing : MonoBehaviour
     [SerializeField] VectorValue pastPos;
     [SerializeField] GameObject player;
     [SerializeField] GameObject gameManager;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isSinkTrigger = true;
@@ -42,6 +43,7 @@ public class StartDishwashing : MonoBehaviour
             if (isSinkTrigger == true && Input.GetKeyDown(KeyCode.F))
             {
                 pastPos.initialValue = new Vector3(8.5f, -1.1f, 0);
+                gameManager.GetComponent<GameManager>().index.index = 4;
                 StartMinigame();
             }
         }

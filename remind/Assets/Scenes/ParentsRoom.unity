@@ -800,6 +800,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 7175502783306727111, guid: cac7f09add861a742a19d800fb23934b, type: 3}
+      propertyPath: index
+      value: 
+      objectReference: {fileID: 11400000, guid: f4cf8cb1e9db68d4ca7251f3376c8a74, type: 2}
+    - target: {fileID: 7175502783306727111, guid: cac7f09add861a742a19d800fb23934b, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1937955634}

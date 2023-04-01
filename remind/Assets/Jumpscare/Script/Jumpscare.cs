@@ -9,7 +9,8 @@ public class Jumpscare : MonoBehaviour
 
     [SerializeField] private GameObject[] jumpscare;
 
-    [SerializeField] GameObject currentObject;
+    
+    [SerializeField] PreviousScene index;
 
 
     void Start()
@@ -24,7 +25,7 @@ public class Jumpscare : MonoBehaviour
 
         if (timer <= 0)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(index.index);
         }
     }
     void InstantiateNewObject()

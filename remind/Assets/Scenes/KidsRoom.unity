@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3569624003531880648, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+  index: {fileID: 11400000, guid: f4cf8cb1e9db68d4ca7251f3376c8a74, type: 2}
 --- !u!1 &1014477375
 GameObject:
   m_ObjectHideFlags: 0

@@ -34,7 +34,7 @@ public class DishWashingMinigame : MonoBehaviour
     {
        if (mistakes >= 3)
         {
-            Utils.ShowJumpscare();
+            SceneManager.LoadScene("Jumpscare");
         }
     }
 

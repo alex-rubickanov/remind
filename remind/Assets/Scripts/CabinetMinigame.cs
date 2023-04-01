@@ -17,6 +17,7 @@ public class CabinetMinigame : MonoBehaviour
 
     [SerializeField] GameObject winScreen;
     [SerializeField] GameObject gameManager;
+    int mistakes = 0;
 
    
     void Start()
@@ -39,6 +40,11 @@ public class CabinetMinigame : MonoBehaviour
             {
                 BlueCloset();
             }
+        }
+
+        if(mistakes >= 3)
+        {
+            SceneManager.LoadScene("Jumpscare");
         }
         
     }
@@ -91,6 +97,7 @@ public class CabinetMinigame : MonoBehaviour
         else
         {
             Debug.Log("WRONG CABINET");
+            mistakes++;
         }
     }
 
@@ -113,6 +120,7 @@ public class CabinetMinigame : MonoBehaviour
         else
         {
             Debug.Log("WRONG CABINET");
+            mistakes++;
         }
     }
 

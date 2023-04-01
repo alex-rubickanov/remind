@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] VectorValue pastPos;
     [SerializeField] VectorValue roomsPos;
 
-    public bool isAbleToInput = true;
+    //public bool isAbleToInput = true;
 
     void Start()
     {

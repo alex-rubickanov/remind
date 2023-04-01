@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     static GameManager instance;
 
-    bool isGameOnPause = false;
+    [SerializeField] bool isGameOnPause = false;
     [SerializeField] GameObject pauseMenu;
 
     [SerializeField] GameObject playerPrefab;
@@ -28,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject dishwashingCompleted;
     [SerializeField] GameObject cabinetCompleted;
+
+    [SerializeField] public PreviousScene index;
 
     private void Awake() //singleton
     {
@@ -62,30 +65,38 @@ public class GameManager : MonoBehaviour
 
         if(isCabinetMinigameCompleted == true)
         {
-            cabinetCompleted.SetActive(true);
+            Debug.Log("Completed");
+            
         }
 
         if (isDishwashingCompleted == true)
         {
-            dishwashingCompleted.SetActive(true);
+            Debug.Log("Completed");
+            
+        }
+
+        if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Cutscene")
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1f;
+        }
+
+
+        if(!pauseMenu.activeSelf == isGameOnPause) 
+        {
+            isGameOnPause = pauseMenu.activeSelf;
         }
 
 
 
 
 
-
-
-
-        if (!isGameOnPause)
+        if (!isGameOnPause || !(Time.timeScale == 0f))
         {
             if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.Q))
             {
                 SceneManager.LoadScene("House");
-                if (SceneManager.GetActiveScene().name == "House" && houseSceneOnce)
-                {
-                    Instantiate(dialogueNathPrefab);
-                }
+                
 
             }
 
@@ -96,7 +107,13 @@ public class GameManager : MonoBehaviour
             }
             
         }
-        
+
+        if (SceneManager.GetActiveScene().name == "House" && houseSceneOnce)
+        {
+            Instantiate(dialogueNathPrefab);
+            houseSceneOnce = false;
+        }
+
     }
 
 
@@ -111,20 +128,20 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             isGameOnPause = true;
             pauseMenu.SetActive(true);
-            player.isAbleToInput = false;
         } else if (isGameOnPause == true) 
         {   
             Debug.Log("Unpause");
             Time.timeScale = 1;
             isGameOnPause = false;
             pauseMenu.SetActive(false);
-            player.isAbleToInput = true;
         }
     }
 
     public void BackToMainMenuButton()
     {
+        isGameOnPause = false;
         SceneManager.LoadScene(0);
+        
     }
 
 
