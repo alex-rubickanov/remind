@@ -91,7 +91,7 @@ public class DragAndDrop : MonoBehaviour
                 this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
                 wrongMoveCounter += 1;
 
-                if (wrongMoveCounter == 3)
+                if (wrongMoveCounter == 1)
                 {
                     SceneManager.LoadScene(7);
                 }

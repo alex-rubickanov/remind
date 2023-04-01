@@ -32,7 +32,7 @@ public class DishWashingMinigame : MonoBehaviour
 
     void Update()
     {
-       if (mistakes >= 3)
+       if (mistakes >= 2)
         {
             SceneManager.LoadScene("Jumpscare");
         }
