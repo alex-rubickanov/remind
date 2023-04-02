@@ -10,11 +10,14 @@ public class CutsceneScript : MonoBehaviour
     [SerializeField] AnimationCurve curve;
     [SerializeField] Animator secondFrameAnimator;
     [SerializeField] Animator familyPicAnimator;
+    [SerializeField] Animator fadeInAnimator;
+    [SerializeField] GameObject fadeInObject;
 
     int frame = 1;
 
     private void Start()
     {
+        
         AlphaIncrease(canvasGroups[0]);
     }
 
@@ -139,8 +142,9 @@ IEnumerator FadeIn(CanvasGroup canvasGroup)
                 AlphaReduce(canvasGroups[21]);
                 break;
             case 21:
-                SceneManager.LoadScene(2);
-               
+                fadeInObject.SetActive(true);
+                StartCoroutine(ThreeSecondsTimer());
+                
                 break;
 
 
@@ -151,6 +155,13 @@ IEnumerator FadeIn(CanvasGroup canvasGroup)
         frame++;
 
        
+    }
+
+    IEnumerator ThreeSecondsTimer()
+    {
+        fadeInAnimator.SetTrigger("Fade");
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(2);
     }
 
 }
