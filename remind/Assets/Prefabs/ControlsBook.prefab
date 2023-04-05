@@ -328,7 +328,7 @@ MonoBehaviour:
   lines:
   - 'Book says: "Use E for enter, Q for exit and F for use".'
   - What does that supposed to mean?
-  textspeed: 0.05
+  textspeed: 0.02
   player: {fileID: 8849891293344106292, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
   finished: 0
 --- !u!1 &5565581918822381066
