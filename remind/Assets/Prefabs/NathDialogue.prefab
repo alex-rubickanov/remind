@@ -118,7 +118,7 @@ MonoBehaviour:
   - Good morning, my love!
   - I go to work soon.
   - Check notes on the fridge.
-  textspeed: 0.1
+  textspeed: 0.02
   player: {fileID: 8849891293344106292, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
   finished: 0
 --- !u!1 &4988609945876219353

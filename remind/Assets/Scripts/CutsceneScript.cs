@@ -1,7 +1,10 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CutsceneScript : MonoBehaviour
 {
@@ -14,6 +17,10 @@ public class CutsceneScript : MonoBehaviour
     [SerializeField] GameObject fadeInObject;
 
     int frame = 1;
+    [Header("Skip Slider")]
+    [SerializeField] Slider slider;
+    [SerializeField] GameObject skipCanvas;
+    
 
     private void Start()
     {
@@ -21,7 +28,12 @@ public class CutsceneScript : MonoBehaviour
         AlphaIncrease(canvasGroups[0]);
     }
 
-IEnumerator FadeIn(CanvasGroup canvasGroup)
+    private void Update()
+    {
+        SkipButton();
+    }
+
+    IEnumerator FadeIn(CanvasGroup canvasGroup)
     {
         float f = 0f;
 
@@ -164,4 +176,30 @@ IEnumerator FadeIn(CanvasGroup canvasGroup)
         SceneManager.LoadScene(2);
     }
 
+
+    private void SkipButton()
+    {
+        Debug.Log(slider.value);
+
+        if(Input.GetKey(KeyCode.F))
+        {
+            skipCanvas.SetActive(true);
+            slider.value += Time.deltaTime;
+        }
+        if (slider.value < slider.maxValue)
+        {
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                skipCanvas.SetActive(false);
+                slider.value = 0;
+            }
+        }
+        
+
+        if(slider.value >= slider.maxValue)
+        {
+            fadeInObject.SetActive(true);
+            StartCoroutine(ThreeSecondsTimer());
+        }
+    }
 }
