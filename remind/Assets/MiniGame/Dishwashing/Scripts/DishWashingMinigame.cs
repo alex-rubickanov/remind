@@ -9,7 +9,7 @@ public class DishWashingMinigame : MonoBehaviour
 {
     [SerializeField] private GameObject[] gameObjects;//prefabs
 
-    [SerializeField] private List<GameObject> randomList;
+    [SerializeField] public List<GameObject> randomList;
 
     [SerializeField] int maxRandomArray = 10;
     
@@ -49,7 +49,7 @@ public class DishWashingMinigame : MonoBehaviour
         return randomList;
     }
 
-    void InstantiateNewObject()
+    public void InstantiateNewObject()
     {
         //currentObject = Instantiate(randomArray[0]);
         if (randomList.Count >= 1)
@@ -59,9 +59,6 @@ public class DishWashingMinigame : MonoBehaviour
         else 
         {
             Debug.Log("PLAYER WON"); 
-            forkButton.enabled = false;
-            spoonButton.enabled = false;
-            plateButton.enabled = false;
             Time.timeScale = 0;
             winScreen.SetActive(true);
             gameManager.GetComponent<GameManager>().isDishwashingCompleted = true;
