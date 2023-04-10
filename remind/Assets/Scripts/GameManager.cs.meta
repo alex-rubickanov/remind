@@ -3,7 +3,17 @@ guid: 1cf9e10bcd86ed54799d57536ce34eba
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pauseMenu: {instanceID: 0}
+  - playerPrefab: {instanceID: 0}
+  - pastPos: {instanceID: 0}
+  - player: {instanceID: 0}
+  - bookDialoguePrefab: {instanceID: 0}
+  - dialogueNathPrefab: {instanceID: 0}
+  - fridgeNotes: {instanceID: 0}
+  - dishwashingCompleted: {instanceID: 0}
+  - cabinetCompleted: {instanceID: 0}
+  - index: {fileID: 11400000, guid: f4cf8cb1e9db68d4ca7251f3376c8a74, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

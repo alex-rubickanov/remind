@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ParentsRoom.unity
     guid: 2003334eaaea62245b929daa5a07e355
   - enabled: 1
-    path: Assets/House.unity
+    path: Assets/Scenes/House.unity
     guid: e45cbac1180abe546b5945771533e98d
   - enabled: 1
     path: Assets/Scenes/DishWashingMinigame.unity
@@ -24,9 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/KidsRoom.unity
     guid: 32015bd50e6c678489f92a5cc90add65
   - enabled: 1
+    path: Assets/Scenes/CabinetMinigame.unity
+    guid: 3887b63e5a5b3254fb02c3d68ccafe18
+  - enabled: 1
     path: Assets/Scenes/Jumpscare.unity
     guid: 536763c2181d0f64a8d151ab66ffb42a
   - enabled: 1
     path: Assets/Scenes/DinnerMinigame.unity
     guid: c54860ba3f6262a41b8345b0a8989007
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 29de5da4370d5ab4e92060f347e390f4
   m_configObjects: {}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PinkClothes : MonoBehaviour
 {
+    [SerializeField] GameObject minigameObject;
     private IEnumerator SmoothLerp(float time)
     {
         Vector3 startingPos = transform.position;
@@ -16,6 +17,7 @@ public class PinkClothes : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        
     }
 
    public void ClothAnimation()

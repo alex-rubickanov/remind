@@ -16,14 +16,18 @@ public class DragAndDrop : MonoBehaviour
     private int wrongMoveCounter = 0;
 
     private Vector2 resetPosition;
+    [SerializeField] GameObject winScreen;
 
     
     [SerializeField] GameObject nextPlate;
+
+    GameObject gameManager;
 
 
     void Start()
     {
         resetPosition = this.transform.localPosition;
+        gameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -44,43 +48,61 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Time.timeScale != 0)
         {
-            Vector2 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            startPosX = mousePos.x - this.transform.localPosition.x;
-            startPosY = mousePos.y - this.transform.localPosition.y;
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector2 mousePos;
+                mousePos = Input.mousePosition;
+                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+                startPosX = mousePos.x - this.transform.localPosition.x;
+                startPosY = mousePos.y - this.transform.localPosition.y;
 
-            movingPlate = true;
+                movingPlate = true;
+            }
         }
+        
     }
 
     private void OnMouseUp()
     {
         movingPlate = false;
-
-        if (Mathf.Abs(this.transform.localPosition.x - correctPosition.transform.localPosition.x) <= 0.5f && Mathf.Abs(this.transform.localPosition.y - correctPosition.transform.localPosition.y) <= 0.5f)
+        if(Time.timeScale != 0 ) 
         {
-            this.transform.localPosition = new Vector2(correctPosition.transform.localPosition.x, correctPosition.transform.localPosition.y);
-
-            plateCorrect = true;
-            
-            if(nextPlate != null)
+            if (Mathf.Abs(this.transform.localPosition.x - correctPosition.transform.localPosition.x) <= 0.5f && Mathf.Abs(this.transform.localPosition.y - correctPosition.transform.localPosition.y) <= 0.5f)
             {
-                nextPlate.GetComponent<Collider2D>().enabled = true;
-            }
-            
-        }
-        else
-        {
-            this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
-            wrongMoveCounter += 1;
+                this.transform.localPosition = new Vector2(correctPosition.transform.localPosition.x, correctPosition.transform.localPosition.y);
 
-            if (wrongMoveCounter == 3)
+                plateCorrect = true;
+
+                if (nextPlate != null)
+                {
+                    nextPlate.GetComponent<Collider2D>().enabled = true;
+                }
+                else
+                {
+                    gameManager.GetComponent<GameManager>().isTableMinigameCompleted = true;
+                    winScreen.SetActive(true);
+                }
+
+            }
+            else
             {
-                SceneManager.LoadScene(6);
+                this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
+                wrongMoveCounter += 1;
+
+                if (wrongMoveCounter == 1)
+                {
+                    SceneManager.LoadScene(7);
+                }
             }
         }
+        
+    }
+
+    public void ExitButton()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("House");
     }
 }

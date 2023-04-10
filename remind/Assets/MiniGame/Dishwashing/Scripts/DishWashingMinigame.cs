@@ -14,6 +14,7 @@ public class DishWashingMinigame : MonoBehaviour
     [SerializeField] int maxRandomArray = 10;
     
     [SerializeField] GameObject currentObject;
+    [SerializeField] GameObject gameManager;
 
     int mistakes = 0;
 
@@ -24,15 +25,16 @@ public class DishWashingMinigame : MonoBehaviour
     [SerializeField] GameObject winScreen;
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");   
         randomList = RandomSequence(gameObjects);
         InstantiateNewObject();
     }
 
     void Update()
     {
-       if (mistakes >= 3)
+       if (mistakes >= 2)
         {
-            Utils.ShowJumpscare();
+            SceneManager.LoadScene("Jumpscare");
         }
     }
 
@@ -60,7 +62,9 @@ public class DishWashingMinigame : MonoBehaviour
             forkButton.enabled = false;
             spoonButton.enabled = false;
             plateButton.enabled = false;
+            Time.timeScale = 0;
             winScreen.SetActive(true);
+            gameManager.GetComponent<GameManager>().isDishwashingCompleted = true;
         }
         
     }
@@ -111,6 +115,7 @@ public class DishWashingMinigame : MonoBehaviour
 
     public void ExitButton()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("House");
     }
 }

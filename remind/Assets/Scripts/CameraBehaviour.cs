@@ -13,6 +13,6 @@ public class CameraBehaviour : MonoBehaviour
     }
     private void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(player.transform.position.x,-10, 7.7f), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(player.transform.position.x,-10, 10.7f), transform.position.y, transform.position.z);
     }
 }

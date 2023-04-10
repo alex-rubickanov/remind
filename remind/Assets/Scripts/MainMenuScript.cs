@@ -8,6 +8,11 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] GameObject optionsCanvas;
     [SerializeField] Animator animator;
 
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
+
     public void PlayButton()
     {
         animator.SetTrigger("FadeOut");

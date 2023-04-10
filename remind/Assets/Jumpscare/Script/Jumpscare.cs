@@ -8,28 +8,64 @@ public class Jumpscare : MonoBehaviour
     float timer = 3;
 
     [SerializeField] private GameObject[] jumpscare;
+    [SerializeField] private GameObject[] jumpscareSounds;
 
-    [SerializeField] GameObject currentObject;
+    [SerializeField] PreviousScene index;
+
+    GameObject currentJumpscare;
+    GameObject currentJumpscareSounds;
+
+    [SerializeField] float speed = 2f;
+    Vector3 newScale = new Vector3(1.2f, 1.2f, 1.2f);
+    Vector3 endScale = new Vector3(-0.7f, -0.7f, -0.7f);
+    
+
 
 
     void Start()
     {
-        
-        InstantiateNewObject();
+        currentJumpscare = InstantiateNewObject(); ;
+        currentJumpscareSounds = InstantiateNewSound();
+
+
     }
 
     void Update()
     {
+
+        currentJumpscare.transform.localScale = Vector3.Lerp(currentJumpscare.transform.localScale, newScale, speed * Time.deltaTime);
         timer -= Time.deltaTime;
+        Debug.Log(timer);
+
+        if(timer <= 1f)
+        {
+            currentJumpscare.transform.localScale = Vector3.Lerp(currentJumpscare.transform.localScale, endScale, speed * Time.deltaTime);
+        }
+
+        
 
         if (timer <= 0)
         {
-            SceneManager.LoadScene(7);
+           SceneManager.LoadScene(index.index);
+        }
+
+        if(Time.timeScale == 0f)
+        {
+            currentJumpscareSounds.GetComponent<AudioSource>().Pause();
+        } else
+        {
+            currentJumpscareSounds.GetComponent<AudioSource>().UnPause();
         }
     }
-    void InstantiateNewObject()
+    GameObject InstantiateNewObject()
     {
-        Instantiate(jumpscare[Random.Range(0, 7)]);
+       return Instantiate(jumpscare[Random.Range(0, 7)]);
+
+    }
+    GameObject InstantiateNewSound()
+    {
+        return Instantiate(jumpscareSounds[Random.Range(0, 5)]);
+
 
     }
 }

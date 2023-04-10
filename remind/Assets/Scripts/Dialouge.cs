@@ -24,18 +24,22 @@ public class Dialouge : MonoBehaviour
     
     void Update()
     {
-       if(Input.GetMouseButtonDown(0))
+        if(Time.timeScale == 1f)
         {
-            if (textcomponent.text == lines[index])
+            if (Input.GetMouseButtonDown(0))
             {
-                NextLine();
+                if (textcomponent.text == lines[index])
+                {
+                    NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    textcomponent.text = lines[index];
+                }
             }
-            else
-            {
-                StopAllCoroutines();
-                textcomponent.text = lines[index];
-            }
-        } 
+        }
+       
     }
     void StartDialouge ()
     {
@@ -62,7 +66,6 @@ public class Dialouge : MonoBehaviour
         else
         {
             finished = true;
-           // player.isAbleToInput = true;
             gameObject.SetActive(false);
             
         }
