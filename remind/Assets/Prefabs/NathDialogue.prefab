@@ -120,6 +120,7 @@ MonoBehaviour:
   - Check notes on the fridge.
   textspeed: 0.1
   player: {fileID: 8849891293344106292, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
+  finished: 0
 --- !u!1 &4988609945876219353
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc0815b1846eb234db244ba85172ccd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16fccc1af71474743b81e7db3da1b9d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

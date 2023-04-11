@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -17,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] VectorValue pastPos;
     [SerializeField] VectorValue roomsPos;
 
-    public bool isAbleToInput = true;
+    //public bool isAbleToInput = true;
 
     void Start()
     {
@@ -33,12 +32,13 @@ public class Player : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        
     }
 
 
     void Update()
     {
-        if(isAbleToInput) 
+        if(Time.timeScale == 1) 
         {
             moveHorizontal = Input.GetAxisRaw("Horizontal");
 

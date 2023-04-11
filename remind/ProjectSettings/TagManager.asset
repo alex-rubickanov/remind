@@ -8,6 +8,8 @@ TagManager:
   - Fork
   - Spoon
   - Border
+  - PinkClothes
+  - BlueClothes
   layers:
   - Default
   - TransparentFX
@@ -44,4 +46,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BlackPlates
+    uniqueID: 555500771
+    locked: 0
+  - name: Plates
+    uniqueID: 1822541267
     locked: 0

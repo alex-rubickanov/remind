@@ -14,6 +14,9 @@ public class DishWashingMinigame : MonoBehaviour
     [SerializeField] int maxRandomArray = 10;
     
     [SerializeField] GameObject currentObject;
+    [SerializeField] GameObject gameManager;
+
+    int mistakes = 0;
 
     [Header("BUTTONS AND WIN SCREEN")]
     [SerializeField] Button plateButton;
@@ -22,13 +25,17 @@ public class DishWashingMinigame : MonoBehaviour
     [SerializeField] GameObject winScreen;
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");   
         randomList = RandomSequence(gameObjects);
         InstantiateNewObject();
     }
 
     void Update()
     {
-       
+       if (mistakes >= 2)
+        {
+            SceneManager.LoadScene("Jumpscare");
+        }
     }
 
     List<GameObject> RandomSequence(GameObject[] gameObjects)
@@ -55,7 +62,9 @@ public class DishWashingMinigame : MonoBehaviour
             forkButton.enabled = false;
             spoonButton.enabled = false;
             plateButton.enabled = false;
+            Time.timeScale = 0;
             winScreen.SetActive(true);
+            gameManager.GetComponent<GameManager>().isDishwashingCompleted = true;
         }
         
     }
@@ -70,6 +79,7 @@ public class DishWashingMinigame : MonoBehaviour
         } else
         {
             Debug.Log("WRONG SHELF");
+            mistakes++;
         }
     }
 
@@ -84,6 +94,7 @@ public class DishWashingMinigame : MonoBehaviour
         else
         {
             Debug.Log("WRONG SHELF");
+            mistakes++;
         }
     }
 
@@ -98,11 +109,13 @@ public class DishWashingMinigame : MonoBehaviour
         else
         {
             Debug.Log("WRONG SHELF");
+            mistakes++;
         }
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("House");
     }
 }
