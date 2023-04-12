@@ -34,7 +34,7 @@ public class CabinetMinigame : MonoBehaviour
             {
                 if (randomList.Count > 0)
                 {
-                    if (Input.GetKeyDown(KeyCode.A))
+                   /* if (Input.GetKeyDown(KeyCode.A))
                     {
                         PinkCloset();
                     }
@@ -42,7 +42,7 @@ public class CabinetMinigame : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.D))
                     {
                         BlueCloset();
-                    }
+                    }*/
                 }
 
                 if (mistakes >= 2)
