@@ -10,16 +10,26 @@ public class FridgeNotes : MonoBehaviour
     [SerializeField] GameObject fridgeNotes;
     bool isFridgeNotesEnabled = false;
 
+    GameObject notesIcon;
+
+
+    private void Start()
+    {
+        notesIcon = GameObject.Find("ExitIcon");
+        notesIcon.SetActive(false);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Enter fridge notes trigger");
         isFridgeNotesTrigger = true;
+        notesIcon.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log("Exit fridge notes trigger");
         isFridgeNotesTrigger = false;
+        notesIcon.SetActive(false);
     }
 
     private void Update()
