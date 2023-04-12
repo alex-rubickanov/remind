@@ -35,6 +35,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public PreviousScene index;
 
+
+    public bool isParentsRoomExitTrigger = false;
+    public bool isChildrenRoomExitTrigger = false;
+    
+
+
     private void Awake() //singleton
     {
         if (instance == null)
@@ -119,7 +125,7 @@ public class GameManager : MonoBehaviour
 
         if (!isGameOnPause || !(Time.timeScale == 0f))
         {
-            if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.Q))
+            if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.E) && isParentsRoomExitTrigger)
             {
                 SceneManager.LoadScene("House");
                 
