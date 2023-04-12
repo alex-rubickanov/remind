@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
 
             }
 
-            if (SceneManager.GetActiveScene().name == "KidsRoom" && Input.GetKeyDown(KeyCode.Q))
+            if (SceneManager.GetActiveScene().name == "KidsRoom" && Input.GetKeyDown(KeyCode.E) && isChildrenRoomExitTrigger)
             {
                 SceneManager.LoadScene("House");
 
