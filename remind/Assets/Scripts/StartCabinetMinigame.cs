@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartCabinetMinigame : MonoBehaviour
 {
+    GameObject cabinetIcon;
     bool isCabinetTrigger = false;
     
     [SerializeField] GameObject player;
@@ -13,6 +14,7 @@ public class StartCabinetMinigame : MonoBehaviour
     {
         isCabinetTrigger = true;
         Debug.Log("Enter Cabinet Trigger");
+        cabinetIcon.SetActive(true);
 
     }
 
@@ -20,6 +22,7 @@ public class StartCabinetMinigame : MonoBehaviour
     {
         isCabinetTrigger = false;
         Debug.Log("Exit Cabinet Trigger");
+        cabinetIcon.SetActive(false);
     }
 
     public void StartMinigame()
@@ -30,6 +33,8 @@ public class StartCabinetMinigame : MonoBehaviour
 
     private void Start()
     {
+        cabinetIcon = GameObject.Find("CabinetMiniGameIcon");
+        cabinetIcon.SetActive(false);
         gameManager = GameObject.Find("GameManager");
     }
 
