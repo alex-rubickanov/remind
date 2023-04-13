@@ -10,6 +10,6 @@ public class IconMoving : MonoBehaviour
     
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + Mathf.Sin(Time.time * freq) * amp, transform.position.z);
+        transform.position = new Vector3(transform.position.x, Mathf.Sin((transform.position.y + Time.time) * freq) * amp, transform.position.z);
     }
 }
