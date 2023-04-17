@@ -860,5 +860,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7175502783306727111, guid: cac7f09add861a742a19d800fb23934b, type: 3}
+      propertyPath: jumpscareCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac7f09add861a742a19d800fb23934b, type: 3}

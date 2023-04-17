@@ -87,7 +87,7 @@ public class DishwashingDragAndDrop : MonoBehaviour
                 this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
                 wrongMoveCounter += 1;
 
-                if (wrongMoveCounter == 5)
+                if (wrongMoveCounter == 2)
                 {
                     SceneManager.LoadScene(7);
                 }
