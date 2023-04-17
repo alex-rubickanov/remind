@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
 
     public bool isParentsRoomExitTrigger = false;
     public bool isChildrenRoomExitTrigger = false;
+    [SerializeField] public int jumpscareCount = 0;    
     
-
 
     private void Awake() //singleton
     {
@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(pauseMenu);
 
+        CheckDeath();
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -85,19 +86,7 @@ public class GameManager : MonoBehaviour
             
         }
 
-        if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Cutscene")
-        {
-            isTableMinigameCompleted = false;
-            isCabinetMinigameCompleted = false;
-            isDishwashingCompleted = false;
-            houseSceneOnce = false;
-            isGameOnPause = false;
-            parentsSceneOnce = false;
-
-            pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0);
-            pauseMenu.SetActive(false);
-            Time.timeScale = 1f;
-        }
+        
 
 
         if(!pauseMenu.activeSelf == isGameOnPause) 
@@ -190,5 +179,34 @@ public class GameManager : MonoBehaviour
         
     }
 
-    
+
+    private void ResetGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Cutscene")
+        {
+            Time.timeScale = 0f;
+            isTableMinigameCompleted = false;
+            isCabinetMinigameCompleted = false;
+            isDishwashingCompleted = false;
+            houseSceneOnce = false;
+            isGameOnPause = false;
+            parentsSceneOnce = false;
+            jumpscareCount = 0;
+
+            pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0);
+            pauseMenu.SetActive(false);
+            
+        }
+    }
+
+    private void CheckDeath()
+    {
+        if(jumpscareCount >= 1)
+        {
+            
+        }
+    }
+
 }
