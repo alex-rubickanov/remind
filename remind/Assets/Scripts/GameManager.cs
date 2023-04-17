@@ -127,6 +127,7 @@ public class GameManager : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "ParentsRoom" && Input.GetKeyDown(KeyCode.E) && isParentsRoomExitTrigger)
             {
+                isParentsRoomExitTrigger = false;
                 SceneManager.LoadScene("House");
                 
 
@@ -134,6 +135,7 @@ public class GameManager : MonoBehaviour
 
             if (SceneManager.GetActiveScene().name == "KidsRoom" && Input.GetKeyDown(KeyCode.E) && isChildrenRoomExitTrigger)
             {
+                isChildrenRoomExitTrigger = false;
                 SceneManager.LoadScene("House");
 
             }
@@ -187,7 +189,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
         
     }
-
 
     
 }

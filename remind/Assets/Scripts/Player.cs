@@ -14,7 +14,8 @@ public class Player : MonoBehaviour
     Animator animator;
 
     [SerializeField] VectorValue pastPos;
-    [SerializeField] VectorValue roomsPos;
+    [SerializeField] VectorValue parentsRoomsPos;
+    [SerializeField] VectorValue kidsRoomsPos;
 
     //public bool isAbleToInput = true;
 
@@ -24,9 +25,12 @@ public class Player : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "House")
         {
             transform.position = pastPos.initialValue;
-        } else
+        } else if (SceneManager.GetActiveScene().name == "ParentsRoom")
         {
-            transform.position = roomsPos.initialValue;
+            transform.position = parentsRoomsPos.initialValue;
+        } else if(SceneManager.GetActiveScene().name == "KidsRoom")
+        {
+            transform.position = kidsRoomsPos.initialValue;
         }
         
         rb2D = GetComponent<Rigidbody2D>();

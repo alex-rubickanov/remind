@@ -15,7 +15,7 @@ public class FridgeNotes : MonoBehaviour
 
     private void Start()
     {
-        notesIcon = GameObject.Find("ExitIcon");
+        notesIcon = GameObject.Find("FridgeNotesIcon");
         notesIcon.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)

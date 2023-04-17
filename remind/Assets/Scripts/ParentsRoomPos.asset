@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46d1846b187e8124a8a3efa6e2416d00, type: 3}
-  m_Name: RoomsPos
+  m_Name: ParentsRoomPos
   m_EditorClassIdentifier: 
-  initialValue: {x: 0, y: -2.5, z: 0}
+  initialValue: {x: 4.91, y: -2.5, z: 0}

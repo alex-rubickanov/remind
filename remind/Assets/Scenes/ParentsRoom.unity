@@ -384,7 +384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa3d3f7abaa83e4bb290afa63ec731a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amp: 0.001
   freq: 6
 --- !u!1 &836636416
 GameObject:
@@ -608,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.91
       objectReference: {fileID: 0}
     - target: {fileID: 3569624003531880651, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
       propertyPath: m_LocalPosition.y

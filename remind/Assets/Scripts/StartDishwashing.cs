@@ -18,7 +18,10 @@ public class StartDishwashing : MonoBehaviour
     {
         isSinkTrigger = true;
         Debug.Log("Enter Sink Trigger");
-        dishwashingMinigameIcon.SetActive(true);
+        if (dishwashingMinigameIcon != null)
+        {
+            dishwashingMinigameIcon.SetActive(true);
+        }
 
     }
 
@@ -26,7 +29,11 @@ public class StartDishwashing : MonoBehaviour
     {
         isSinkTrigger = false;
         Debug.Log("Exit Sink Trigger");
-        dishwashingMinigameIcon.SetActive(false);
+        
+        if (dishwashingMinigameIcon != null)
+        {
+            dishwashingMinigameIcon.SetActive(false);
+        }
     }
 
     public void StartMinigame()

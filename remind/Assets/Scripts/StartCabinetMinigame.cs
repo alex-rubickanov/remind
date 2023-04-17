@@ -10,11 +10,16 @@ public class StartCabinetMinigame : MonoBehaviour
     
     [SerializeField] GameObject player;
     GameObject gameManager;
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isCabinetTrigger = true;
         Debug.Log("Enter Cabinet Trigger");
-        cabinetIcon.SetActive(true);
+        if (cabinetIcon != null)
+        {
+            cabinetIcon.SetActive(true);
+        }
 
     }
 
@@ -22,7 +27,11 @@ public class StartCabinetMinigame : MonoBehaviour
     {
         isCabinetTrigger = false;
         Debug.Log("Exit Cabinet Trigger");
-        cabinetIcon.SetActive(false);
+        
+        if(cabinetIcon != null)
+        {
+            cabinetIcon.SetActive(false);
+        }
     }
 
     public void StartMinigame()
@@ -33,7 +42,7 @@ public class StartCabinetMinigame : MonoBehaviour
 
     private void Start()
     {
-        cabinetIcon = GameObject.Find("CabinetMiniGameIcon");
+        cabinetIcon = GameObject.Find("CabinetMinigameIcon");
         cabinetIcon.SetActive(false);
         gameManager = GameObject.Find("GameManager");
     }

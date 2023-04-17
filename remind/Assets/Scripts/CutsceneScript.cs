@@ -20,7 +20,7 @@ public class CutsceneScript : MonoBehaviour
     [Header("Skip Slider")]
     [SerializeField] Slider slider;
     [SerializeField] GameObject skipCanvas;
-    
+    [SerializeField] GameObject skipText;
 
     private void Start()
     {
@@ -177,7 +177,7 @@ public class CutsceneScript : MonoBehaviour
     }
 
 
-    private void SkipButton()
+    private void SkipButton()   
     {
         Debug.Log(slider.value);
 
@@ -185,6 +185,7 @@ public class CutsceneScript : MonoBehaviour
         {
             skipCanvas.SetActive(true);
             slider.value += Time.deltaTime;
+            skipText.SetActive(false);
         }
         if (slider.value < slider.maxValue)
         {
@@ -192,6 +193,7 @@ public class CutsceneScript : MonoBehaviour
             {
                 skipCanvas.SetActive(false);
                 slider.value = 0;
+                
             }
         }
         

@@ -26,7 +26,7 @@ public class ParentsDoor : MonoBehaviour
     }
     private void Start()
     {
-        parentroomicon = GameObject.Find("parentroomicon");
+        parentroomicon = GameObject.Find("ParentRoomIcon");
         parentroomicon.SetActive(false);
     }
     private void Update()

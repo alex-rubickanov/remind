@@ -5,11 +5,17 @@ using UnityEngine;
 public class IconMoving : MonoBehaviour
 {
 
-    [SerializeField] float amp = 0.0001f;
+     float amp = 0.2f;
     [SerializeField] float freq = 6f;
-    
+    Vector3 initPos;
+
+    private void Start()
+    {
+        initPos= transform.position;
+    }
+
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, Mathf.Sin((transform.position.y + Time.time) * freq) * amp, transform.position.z);
+        transform.position = new Vector3(initPos.x, Mathf.Sin(Time.time * freq) * amp + initPos.y, 0);
     }
 }
