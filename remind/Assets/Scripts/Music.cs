@@ -36,6 +36,11 @@ public class Music : MonoBehaviour
             gameObject.GetComponent<AudioSource>().volume = 0.146f;
         }
 
+        
+        if(SceneManager.GetActiveScene().name == "EndCutscene")
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

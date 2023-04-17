@@ -28,7 +28,6 @@ public class Jumpscare : MonoBehaviour
         currentJumpscare = InstantiateNewObject(); ;
         currentJumpscareSounds = InstantiateNewSound();
 
-        gameManager.jumpscareCount++;
     }
 
     void Update()

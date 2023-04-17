@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
 
     public bool isParentsRoomExitTrigger = false;
     public bool isChildrenRoomExitTrigger = false;
-    [SerializeField] public int jumpscareCount = 0;    
     
 
     private void Awake() //singleton
@@ -67,12 +66,15 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(pauseMenu);
 
-        CheckDeath();
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+     
+        if(SceneManager.GetActiveScene().name != "EndCutscene" )
         {
-            Pause();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Pause();
+            }
         }
+        
 
         if(isCabinetMinigameCompleted == true)
         {
@@ -105,9 +107,9 @@ public class GameManager : MonoBehaviour
             fridgeNotes = GameObject.Find("FridgeNotes");
         }
 
-        if(SceneManager.GetActiveScene().name == "House" && isCabinetMinigameCompleted && isDishwashingCompleted && isTableMinigameCompleted)
+        if(SceneManager.GetActiveScene().name == "KidsRoom" && isCabinetMinigameCompleted && isDishwashingCompleted && isTableMinigameCompleted)
         {
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene("EndCutscene");
         }
 
 
@@ -141,6 +143,21 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(bookDialoguePrefab);
             parentsSceneOnce = true;
+        }
+
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Cutscene")
+        {
+            Time.timeScale = 1f;
+            isTableMinigameCompleted = false;
+            isCabinetMinigameCompleted = false;
+            isDishwashingCompleted = false;
+            houseSceneOnce = false;
+            isGameOnPause = false;
+            parentsSceneOnce = false;   
+
+            pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0);
+            pauseMenu.SetActive(false);
+
         }
 
     }
@@ -180,33 +197,5 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void ResetGame()
-    {
-        SceneManager.LoadScene("MainMenu");
-
-        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Cutscene")
-        {
-            Time.timeScale = 0f;
-            isTableMinigameCompleted = false;
-            isCabinetMinigameCompleted = false;
-            isDishwashingCompleted = false;
-            houseSceneOnce = false;
-            isGameOnPause = false;
-            parentsSceneOnce = false;
-            jumpscareCount = 0;
-
-            pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0);
-            pauseMenu.SetActive(false);
-            
-        }
+  
     }
-
-    private void CheckDeath()
-    {
-        if(jumpscareCount >= 1)
-        {
-            
-        }
-    }
-
-}
