@@ -8,15 +8,16 @@ public class GameManager : MonoBehaviour
 {
     static GameManager instance;
 
+    [Header("PAUSE MENU")]
     [SerializeField] bool isGameOnPause = false;
     [SerializeField] GameObject pauseMenu;
 
+    [Header("PLAYER")]
     [SerializeField] GameObject playerPrefab;
-    
-
     [SerializeField] VectorValue pastPos;
     [SerializeField] Player player;
 
+    [Header("DIALOGUES")]
     [SerializeField] GameObject bookDialoguePrefab;
     [SerializeField] GameObject dialogueNathPrefab;
 
@@ -25,20 +26,25 @@ public class GameManager : MonoBehaviour
     bool houseSceneOnce = false;
     bool parentsSceneOnce = false;
 
+    [Header("MINIGAMES")]
     public bool isDishwashingCompleted = false;
     public bool isCabinetMinigameCompleted = false;
     public bool isTableMinigameCompleted = false;
-    
+    //[SerializeField] GameObject dishwashingCompleted;
+    //[SerializeField] GameObject cabinetCompleted;
 
-    [SerializeField] GameObject dishwashingCompleted;
-    [SerializeField] GameObject cabinetCompleted;
 
+    [Header("SCENE MANAGER")]
     [SerializeField] public PreviousScene index;
 
-
+    [Header("ROOMS TRIGGERS")]
     public bool isParentsRoomExitTrigger = false;
     public bool isChildrenRoomExitTrigger = false;
-    
+
+    [Header("SCREEN INFO")]
+    public float height;
+    public float width;
+    public bool isAnnaAspect = false; 
 
     private void Awake() //singleton
     {
@@ -59,15 +65,22 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(false);
         pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0f);
         
+        height = Screen.height;
+        width = Screen.width;
+
+        if(width / height >= 1.6 && width / height <= 1.7)
+        {
+            isAnnaAspect = true;
+        }
     }
 
     private void Update()
     {
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(pauseMenu);
+        Debug.Log(Screen.safeArea);
 
-     
-        if(SceneManager.GetActiveScene().name != "EndCutscene" )
+        if (SceneManager.GetActiveScene().name != "EndCutscene" )
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
