@@ -456,10 +456,11 @@ MonoBehaviour:
   maxRandomArray: 10
   currentObject: {fileID: 0}
   gameManager: {fileID: 0}
-  plateButton: {fileID: 0}
-  spoonButton: {fileID: 0}
-  forkButton: {fileID: 0}
   winScreen: {fileID: 811006786}
+  buttons:
+  - {fileID: 223609361}
+  - {fileID: 850619938}
+  - {fileID: 1315825769}
 --- !u!1 &306745083
 GameObject:
   m_ObjectHideFlags: 0

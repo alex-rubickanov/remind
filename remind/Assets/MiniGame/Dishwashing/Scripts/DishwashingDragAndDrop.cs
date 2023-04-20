@@ -26,13 +26,15 @@ public class DishwashingDragAndDrop : MonoBehaviour
     {
         resetPosition = this.transform.localPosition;
         gameManager = GameObject.Find("GameManager");
-        CheckCorrectPosition();
+        
         minigameScript = Camera.main.GetComponent<DishWashingMinigame>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckCorrectPosition();
+
         if (plateCorrect == false)
         {
             if (movingPlate)
@@ -45,7 +47,10 @@ public class DishwashingDragAndDrop : MonoBehaviour
             }
         }
     }
-
+    private void OnMouseDrag()
+    {
+        minigameScript.RandomSwap();
+    }
     private void OnMouseDown()
     {
         if (Time.timeScale != 0)

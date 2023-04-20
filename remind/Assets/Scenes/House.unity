@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dishwashing
+  m_text: Dish Sorting
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c9119a4d91ac0e489b29b9af550e6f8, type: 2}
   m_sharedMaterial: {fileID: -2639182129962092481, guid: 8c9119a4d91ac0e489b29b9af550e6f8, type: 2}
