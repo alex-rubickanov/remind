@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject bookDialoguePrefab;
     [SerializeField] GameObject dialogueNathPrefab;
 
+    [Header("CUTSCENES")]
+    public bool isFirstCutsceneEnd = false;
+    public bool isSecondCutsceneEnd = false;
+    GameObject darkEffect;
+
     GameObject fridgeNotes;
 
     bool houseSceneOnce = false;
@@ -62,6 +67,9 @@ public class GameManager : MonoBehaviour
     {
         pauseMenu = Instantiate(pauseMenu);
         
+        darkEffect = GameObject.Find("DarkEffect");
+        
+        
         pauseMenu.SetActive(false);
         pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0f);
         
@@ -72,15 +80,18 @@ public class GameManager : MonoBehaviour
         {
             isAnnaAspect = true;
         }
+
+        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(pauseMenu);
+        DontDestroyOnLoad(darkEffect);
     }
 
     private void Update()
     {
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(pauseMenu);
+        
         Debug.Log(Screen.safeArea);
 
-        if (SceneManager.GetActiveScene().name != "EndCutscene" )
+        if (SceneManager.GetActiveScene().name != "EndCutscene1" || SceneManager.GetActiveScene().name != "EndCutscene2")
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -101,8 +112,17 @@ public class GameManager : MonoBehaviour
             
         }
 
-        
+        if(isFirstCutsceneEnd == true) 
+        {
+            darkEffect.GetComponent<Canvas>().enabled = true;
+        } else if(isFirstCutsceneEnd == false) {
+            darkEffect.GetComponent<Canvas>().enabled = false;
+        }
 
+        if(!isSecondCutsceneEnd && isFirstCutsceneEnd && isCabinetMinigameCompleted && isTableMinigameCompleted && isDishwashingCompleted && SceneManager.GetActiveScene().name != "EndCutscene2")
+        {
+            SceneManager.LoadScene("EndCutscene2");
+        }
 
         if(!pauseMenu.activeSelf == isGameOnPause) 
         {
@@ -120,12 +140,11 @@ public class GameManager : MonoBehaviour
             fridgeNotes = GameObject.Find("FridgeNotes");
         }
 
-        if(SceneManager.GetActiveScene().name == "KidsRoom" && isCabinetMinigameCompleted && isDishwashingCompleted && isTableMinigameCompleted)
+        if(SceneManager.GetActiveScene().name == "KidsRoom" && isCabinetMinigameCompleted && isDishwashingCompleted && isTableMinigameCompleted && !isFirstCutsceneEnd)
         {
-            SceneManager.LoadScene("EndCutscene");
+            SceneManager.LoadScene("EndCutscene1");
         }
-
-
+        
 
         if (!isGameOnPause || !(Time.timeScale == 0f))
         {
@@ -142,6 +161,26 @@ public class GameManager : MonoBehaviour
                 isChildrenRoomExitTrigger = false;
                 SceneManager.LoadScene("House");
 
+            }
+            
+        }
+
+        if(isFirstCutsceneEnd && SceneManager.GetActiveScene().name == "House") 
+        {
+            GameObject nath = GameObject.Find("Nath");
+            if(nath != null) {
+                nath.SetActive(false);
+            }
+            
+        }
+
+        if(isFirstCutsceneEnd && SceneManager.GetActiveScene().name == "KidsRoom") 
+        {
+            GameObject mateo = GameObject.Find("Mateo");
+            GameObject maria = GameObject.Find("Maria");
+            if(mateo != null && maria != null) {
+                maria.SetActive(false);
+                mateo.SetActive(false);
             }
             
         }
@@ -167,6 +206,8 @@ public class GameManager : MonoBehaviour
             houseSceneOnce = false;
             isGameOnPause = false;
             parentsSceneOnce = false;   
+            isFirstCutsceneEnd = false;
+            isSecondCutsceneEnd = false;
 
             pastPos.initialValue = new Vector3(-3.7f, -1.1f, 0);
             pauseMenu.SetActive(false);

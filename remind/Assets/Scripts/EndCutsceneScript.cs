@@ -8,10 +8,13 @@ public class EndCutsceneScript : MonoBehaviour
 {
     VideoPlayer player;
     bool once = true;
+    GameManager gameManager;
 
     private void Start()
     {
+        //Cursor.lockState = CursorLockMode.Locked;
         player = GetComponent<VideoPlayer>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void Update()
@@ -26,7 +29,12 @@ public class EndCutsceneScript : MonoBehaviour
             
             if(!player.isPlaying)
             {
-                SceneManager.LoadScene("MainMenu");
+                gameManager.isCabinetMinigameCompleted = false;
+                gameManager.isDishwashingCompleted = false;
+                gameManager.isTableMinigameCompleted = false;
+
+                gameManager.isFirstCutsceneEnd = true;
+                SceneManager.LoadScene("ParentsRoom");
             }
         }
     }
