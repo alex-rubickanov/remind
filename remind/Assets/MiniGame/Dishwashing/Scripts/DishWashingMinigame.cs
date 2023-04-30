@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class DishWashingMinigame : MonoBehaviour
 {
-    [SerializeField] private GameObject[] gameObjects;//prefabs
+    [SerializeField] private GameObject[] gameObjects; //prefabs
 
-    [SerializeField] private List<GameObject> randomList;
+    [SerializeField] public List<GameObject> randomList;
 
     [SerializeField] int maxRandomArray = 10;
     
@@ -18,11 +18,13 @@ public class DishWashingMinigame : MonoBehaviour
 
     int mistakes = 0;
 
+    float timer = 0f;
+    int randomNumber = 2;
+
     [Header("BUTTONS AND WIN SCREEN")]
-    [SerializeField] Button plateButton;
-    [SerializeField] Button spoonButton;
-    [SerializeField] Button forkButton;
     [SerializeField] GameObject winScreen;
+    [SerializeField] GameObject[] buttons;
+    
     void Start()
     {
         gameManager = GameObject.Find("GameManager");   
@@ -36,6 +38,7 @@ public class DishWashingMinigame : MonoBehaviour
         {
             SceneManager.LoadScene("Jumpscare");
         }
+        
     }
 
     List<GameObject> RandomSequence(GameObject[] gameObjects)
@@ -49,7 +52,7 @@ public class DishWashingMinigame : MonoBehaviour
         return randomList;
     }
 
-    void InstantiateNewObject()
+    public void InstantiateNewObject()
     {
         //currentObject = Instantiate(randomArray[0]);
         if (randomList.Count >= 1)
@@ -59,9 +62,6 @@ public class DishWashingMinigame : MonoBehaviour
         else 
         {
             Debug.Log("PLAYER WON"); 
-            forkButton.enabled = false;
-            spoonButton.enabled = false;
-            plateButton.enabled = false;
             Time.timeScale = 0;
             winScreen.SetActive(true);
             gameManager.GetComponent<GameManager>().isDishwashingCompleted = true;
@@ -117,5 +117,28 @@ public class DishWashingMinigame : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("House");
+    }
+
+    public void Swap() {
+        Debug.Log("Swap");
+        Vector3 bridge = buttons[0].transform.position;
+        for(int i = 0; i < buttons.Length - 1; i++) {
+            buttons[i].transform.position = buttons[i+1].transform.position;
+        }
+        buttons[2].transform.position = bridge;
+    }
+
+    public void RandomSwap() 
+    {
+        if(timer <= randomNumber) {
+            timer += Time.deltaTime;
+            Debug.Log((int)timer);
+        } else {
+            Swap();
+            randomNumber = Random.Range(1, 3);
+            Debug.Log("Random number is " + randomNumber + "!!!!!!!!!!");
+            timer = 0f;
+        }
+        
     }
 }

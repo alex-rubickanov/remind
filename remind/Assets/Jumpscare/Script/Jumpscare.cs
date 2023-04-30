@@ -18,15 +18,15 @@ public class Jumpscare : MonoBehaviour
     [SerializeField] float speed = 2f;
     Vector3 newScale = new Vector3(1.2f, 1.2f, 1.2f);
     Vector3 endScale = new Vector3(-0.7f, -0.7f, -0.7f);
-    
 
+    GameManager gameManager;
 
 
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         currentJumpscare = InstantiateNewObject(); ;
         currentJumpscareSounds = InstantiateNewSound();
-
 
     }
 

@@ -301,7 +301,7 @@ MonoBehaviour:
   - {fileID: 6941808129395873709, guid: 591629e2264ef144c9a219e36d1027ac, type: 3}
   index: {fileID: 11400000, guid: f4cf8cb1e9db68d4ca7251f3376c8a74, type: 2}
   speed: 2
-  secondSpeed: 100000
+  gameManager: {fileID: 7175502783306727111, guid: cac7f09add861a742a19d800fb23934b, type: 3}
 --- !u!1 &1136386894
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartTableMinigame : MonoBehaviour
 {
+    GameObject dinnerIcon;
      bool isTableTrigger = false;
      [SerializeField] VectorValue pastPos;
      GameObject player;
@@ -15,12 +16,23 @@ public class StartTableMinigame : MonoBehaviour
         isTableTrigger = true;
         Debug.Log("Enter Table Trigger");
 
+        if (dinnerIcon != null)
+        {
+            dinnerIcon.SetActive(true);
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         isTableTrigger = false;
         Debug.Log("Exit Table Trigger");
+
+        if (dinnerIcon != null)
+        {
+            dinnerIcon.SetActive(false);
+        }
+        
     }
 
     public void StartMinigame()
@@ -31,6 +43,8 @@ public class StartTableMinigame : MonoBehaviour
 
     private void Start()
     {
+        dinnerIcon = GameObject.Find("DinnerIcon");
+        dinnerIcon.SetActive(false);
         gameManager = GameObject.Find("GameManager");
         player = GameObject.Find("Althea");
     }

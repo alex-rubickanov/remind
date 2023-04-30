@@ -168,5 +168,5 @@ MonoBehaviour:
   moveHorizontal: 0
   speed: 3
   pastPos: {fileID: 11400000, guid: 80620d49e70c95b4ba1fc8c122d92edf, type: 2}
-  roomsPos: {fileID: 11400000, guid: 63fa1176b4fceed46a7bc62551d38e14, type: 2}
-  canMove: 1
+  parentsRoomsPos: {fileID: 11400000, guid: 63fa1176b4fceed46a7bc62551d38e14, type: 2}
+  kidsRoomsPos: {fileID: 11400000, guid: f946248335fe94546aa9a6e587f6474b, type: 2}

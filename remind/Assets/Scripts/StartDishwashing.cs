@@ -11,18 +11,29 @@ public class StartDishwashing : MonoBehaviour
     [SerializeField] VectorValue pastPos;
     [SerializeField] GameObject player;
     [SerializeField] GameObject gameManager;
+
+    GameObject dishwashingMinigameIcon;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isSinkTrigger = true;
         Debug.Log("Enter Sink Trigger");
-        
+        if (dishwashingMinigameIcon != null)
+        {
+            dishwashingMinigameIcon.SetActive(true);
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         isSinkTrigger = false;
         Debug.Log("Exit Sink Trigger");
+        
+        if (dishwashingMinigameIcon != null)
+        {
+            dishwashingMinigameIcon.SetActive(false);
+        }
     }
 
     public void StartMinigame()
@@ -34,6 +45,8 @@ public class StartDishwashing : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("GameManager");
+        dishwashingMinigameIcon = GameObject.Find("DishwashingMinigameIcon");
+        dishwashingMinigameIcon.SetActive(false);
     }
 
     private void Update()

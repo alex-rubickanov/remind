@@ -326,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textcomponent: {fileID: 5565581918822381067}
   lines:
-  - 'Book says: "Use E for enter, Q for exit and F for use".'
+  - 'Book says: "Use A and D to move".'
   - What does that supposed to mean?
   textspeed: 0.02
   player: {fileID: 8849891293344106292, guid: 7b8d4fca22e811a4488233da2d80919c, type: 3}
