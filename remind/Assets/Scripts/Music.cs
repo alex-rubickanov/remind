@@ -37,7 +37,12 @@ public class Music : MonoBehaviour
         }
 
         
-        if(SceneManager.GetActiveScene().name == "EndCutscene")
+        if(SceneManager.GetActiveScene().name == "EndCutscene1")
+        {
+            gameObject.GetComponent<AudioSource>().volume = 0;
+        }
+
+        if(SceneManager.GetActiveScene().name == "EndCutscene2") 
         {
             Destroy(gameObject);
         }
